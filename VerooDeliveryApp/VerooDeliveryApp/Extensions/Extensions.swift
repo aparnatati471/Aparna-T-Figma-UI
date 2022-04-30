@@ -14,3 +14,15 @@ extension UIViewController {
     }
     
 }
+
+extension UINavigationController {
+    
+    ///This is for set color of navigation bar
+    func setTintColor(_ color: UIColor) {
+        let navigationFont = UIFont(name: R.font.readexProMedium.fontName, size: 20)
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: color, NSAttributedString.Key.font: navigationFont!]
+        self.navigationBar.tintColor = color
+    }
+
+}
+

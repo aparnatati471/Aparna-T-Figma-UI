@@ -12,7 +12,7 @@ extension UIColor {
     static let buttonTextColor = R.color.labelTextColor() ?? defaultColor
     static let labelTextColor = R.color.labelTextColor() ?? defaultColor
     static let indicatorColor = R.color.indicatorColor() ?? defaultColor
-    
+
 }
 
     

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jAG-nj-6Sy">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cZL-Aq-7n1">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="jAG-nj-6Sy" customClass="ViewController" customModule="VerooDeliveryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9O-uq-M75">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5YD-Fm-LmD" customClass="CustomView" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olI-Ss-r4N">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="766"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdL-56-5za">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="766"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhk-UU-wt7" userLabel="TopView" customClass="CustomView" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="69"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="us4-Rb-MtO">
+                                                                <rect key="frame" x="24" y="19" width="156" height="31"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUb-Sg-KqR" customClass="TopButtons" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="73" height="31"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Sign in"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="button" value="Sign In"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="signInClicked:" destination="jAG-nj-6Sy" eventType="touchUpInside" id="dbd-zz-OFG"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYf-t6-Dwe" customClass="TopButtons" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="83" y="0.0" width="73" height="31"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Sign up"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="button" value="Sign Up"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="signUpClicked:" destination="jAG-nj-6Sy" eventType="touchUpInside" id="1f5-0h-z9D"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRT-Nn-aXf">
+                                                                <rect key="frame" x="276" y="-10.666666666666664" width="90" height="90"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="vRT-Nn-aXf" secondAttribute="height" multiplier="1:1" id="1fu-ea-w1F"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="profileImage" imagePlacement="trailing" imagePadding="0.0"/>
+                                                                <connections>
+                                                                    <action selector="profileClicked:" destination="jAG-nj-6Sy" eventType="touchUpInside" id="xoc-rO-YcO"/>
+                                                                    <segue destination="WJs-1g-KdE" kind="show" id="l3O-jY-5ZC"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="vRT-Nn-aXf" secondAttribute="trailing" constant="24" id="IEd-Ry-D6q"/>
+                                                            <constraint firstItem="vRT-Nn-aXf" firstAttribute="centerY" secondItem="Mhk-UU-wt7" secondAttribute="centerY" id="XcL-ar-ro6"/>
+                                                            <constraint firstItem="us4-Rb-MtO" firstAttribute="centerY" secondItem="Mhk-UU-wt7" secondAttribute="centerY" id="vIb-Uq-PdF"/>
+                                                            <constraint firstItem="us4-Rb-MtO" firstAttribute="leading" secondItem="Mhk-UU-wt7" secondAttribute="leading" constant="24" id="w2A-Q4-2cx"/>
+                                                            <constraint firstItem="vRT-Nn-aXf" firstAttribute="leading" secondItem="us4-Rb-MtO" secondAttribute="trailing" constant="96" id="zbm-JE-y9j"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhV-sT-cnp" userLabel="BottomView" customClass="CustomView" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="702" width="390" height="64"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bKp-JF-sVR">
+                                                                <rect key="frame" x="24" y="0.0" width="135.33333333333334" height="64"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbh-YH-SUa">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="64" id="5Kh-9h-AF6"/>
+                                                                            <constraint firstAttribute="height" constant="64" id="uQ0-Du-36W"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="appleIcon"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wb-nZ-0uB">
+                                                                        <rect key="frame" x="74" y="0.0" width="61.333333333333343" height="64"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="googleIcon"/>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kie-6w-R1R" customClass="BottomButtons" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                                                <rect key="frame" x="228" y="0.0" width="138" height="64"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonTitle" value="Sign In"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="Kie-6w-R1R" secondAttribute="bottom" id="3VB-2o-uLS"/>
+                                                            <constraint firstItem="bKp-JF-sVR" firstAttribute="leading" secondItem="xhV-sT-cnp" secondAttribute="leading" constant="24" id="C3Y-17-5Aq"/>
+                                                            <constraint firstAttribute="bottom" secondItem="bKp-JF-sVR" secondAttribute="bottom" id="LaG-qz-5Nr"/>
+                                                            <constraint firstItem="bKp-JF-sVR" firstAttribute="centerY" secondItem="xhV-sT-cnp" secondAttribute="centerY" id="Uab-8W-FpJ"/>
+                                                            <constraint firstItem="Kie-6w-R1R" firstAttribute="width" relation="greaterThanOrEqual" secondItem="xhV-sT-cnp" secondAttribute="width" multiplier="0.2" constant="60" id="g9d-5H-5JF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Kie-6w-R1R" secondAttribute="trailing" constant="24" id="geq-3y-VTF"/>
+                                                            <constraint firstItem="Kie-6w-R1R" firstAttribute="top" secondItem="xhV-sT-cnp" secondAttribute="top" id="tTF-e7-eRJ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvU-jF-SSf">
+                                                        <rect key="frame" x="0.0" y="69" width="390" height="633"/>
+                                                        <connections>
+                                                            <segue destination="QgU-3J-jEb" kind="embed" identifier="SignUpVC" id="Tk4-4k-3Ua"/>
+                                                        </connections>
+                                                    </containerView>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qt1-cw-C4C">
+                                                        <rect key="frame" x="0.0" y="69" width="390" height="633"/>
+                                                        <connections>
+                                                            <segue destination="NOQ-P8-PhB" kind="embed" identifier="SignInVC" id="Dfi-fk-HwR"/>
+                                                        </connections>
+                                                    </containerView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="zvU-jF-SSf" firstAttribute="bottom" secondItem="xhV-sT-cnp" secondAttribute="top" id="2W0-4C-DyR"/>
+                                                    <constraint firstItem="Mhk-UU-wt7" firstAttribute="top" secondItem="NdL-56-5za" secondAttribute="top" id="5It-gO-lEe"/>
+                                                    <constraint firstItem="zvU-jF-SSf" firstAttribute="leading" secondItem="NdL-56-5za" secondAttribute="leading" id="6qS-UN-AEE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Qt1-cw-C4C" secondAttribute="trailing" id="NYq-EB-tl4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xhV-sT-cnp" secondAttribute="trailing" id="O3e-e2-SZx"/>
+                                                    <constraint firstItem="Qt1-cw-C4C" firstAttribute="bottom" secondItem="xhV-sT-cnp" secondAttribute="top" id="V7s-X4-1Gh"/>
+                                                    <constraint firstItem="Mhk-UU-wt7" firstAttribute="leading" secondItem="NdL-56-5za" secondAttribute="leading" id="dFb-nT-CDb"/>
+                                                    <constraint firstItem="zvU-jF-SSf" firstAttribute="top" secondItem="Mhk-UU-wt7" secondAttribute="bottom" id="fCk-ey-F2Z"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Mhk-UU-wt7" secondAttribute="trailing" id="gx8-Z5-y8B"/>
+                                                    <constraint firstItem="xhV-sT-cnp" firstAttribute="leading" secondItem="NdL-56-5za" secondAttribute="leading" id="mUy-9L-6zq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zvU-jF-SSf" secondAttribute="trailing" id="o2F-Cb-f30"/>
+                                                    <constraint firstItem="Qt1-cw-C4C" firstAttribute="leading" secondItem="NdL-56-5za" secondAttribute="leading" id="s05-f1-kMD"/>
+                                                    <constraint firstItem="Qt1-cw-C4C" firstAttribute="top" secondItem="Mhk-UU-wt7" secondAttribute="bottom" id="xl4-RB-yTI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xhV-sT-cnp" secondAttribute="bottom" id="yZb-T0-DTk"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="NdL-56-5za" firstAttribute="top" secondItem="olI-Ss-r4N" secondAttribute="top" id="BSk-fh-orf"/>
+                                            <constraint firstItem="NdL-56-5za" firstAttribute="width" secondItem="olI-Ss-r4N" secondAttribute="width" id="Na5-aq-jdR"/>
+                                            <constraint firstAttribute="trailing" secondItem="NdL-56-5za" secondAttribute="trailing" id="Pjq-wH-PVr"/>
+                                            <constraint firstItem="NdL-56-5za" firstAttribute="leading" secondItem="olI-Ss-r4N" secondAttribute="leading" id="knS-jC-eSQ"/>
+                                            <constraint firstItem="NdL-56-5za" firstAttribute="height" secondItem="olI-Ss-r4N" secondAttribute="height" id="tcE-iV-wVs"/>
+                                            <constraint firstAttribute="bottom" secondItem="NdL-56-5za" secondAttribute="bottom" id="xWq-0T-x6V"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="56X-Qf-C0F"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5YD-Fm-LmD" firstAttribute="leading" secondItem="56X-Qf-C0F" secondAttribute="leading" id="95K-UA-xo2"/>
+                            <constraint firstItem="56X-Qf-C0F" firstAttribute="trailing" secondItem="olI-Ss-r4N" secondAttribute="trailing" id="9t2-vs-FaM"/>
+                            <constraint firstItem="Mhk-UU-wt7" firstAttribute="height" secondItem="56X-Qf-C0F" secondAttribute="height" multiplier="0.09" id="FIT-Mr-hz6"/>
+                            <constraint firstItem="56X-Qf-C0F" firstAttribute="bottom" secondItem="olI-Ss-r4N" secondAttribute="bottom" id="Qnm-po-ROr"/>
+                            <constraint firstItem="olI-Ss-r4N" firstAttribute="leading" secondItem="56X-Qf-C0F" secondAttribute="leading" id="UkM-Oc-WEP"/>
+                            <constraint firstItem="olI-Ss-r4N" firstAttribute="top" secondItem="56X-Qf-C0F" secondAttribute="top" id="ghN-Ge-VKB"/>
+                            <constraint firstItem="56X-Qf-C0F" firstAttribute="trailing" secondItem="5YD-Fm-LmD" secondAttribute="trailing" id="jIR-Pg-Uhy"/>
+                            <constraint firstItem="56X-Qf-C0F" firstAttribute="top" secondItem="5YD-Fm-LmD" secondAttribute="top" id="yz3-UX-pZf"/>
+                            <constraint firstItem="56X-Qf-C0F" firstAttribute="bottom" secondItem="5YD-Fm-LmD" secondAttribute="bottom" id="z12-HA-NrY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnSignIn" destination="XUb-Sg-KqR" id="TXg-nW-cdf"/>
+                        <outlet property="btnSignUp" destination="pYf-t6-Dwe" id="MSk-cy-Bet"/>
+                        <outlet property="button" destination="Kie-6w-R1R" id="f1L-sr-UMf"/>
+                        <outlet property="signInContainerView" destination="Qt1-cw-C4C" id="cpj-hS-two"/>
+                        <outlet property="signUpContainerView" destination="zvU-jF-SSf" id="b0f-Ud-9nu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fqk-c0-w1u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2565" y="-1062"/>
+        </scene>
+        <!--ProfileScreen-->
+        <scene sceneID="kKW-Bc-7fh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileScreen" id="WJs-1g-KdE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bpg-v0-vYD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etY-vE-GWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3242" y="-1301"/>
+        </scene>
+        <!--Sign InVC-->
+        <scene sceneID="mGO-Bd-NC9">
+            <objects>
+                <viewController id="NOQ-P8-PhB" customClass="SignInVC" customModule="VerooDeliveryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4XD-dm-yOB" customClass="CustomView" customModule="VerooDeliveryApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="633"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2y-dO-ybv" customClass="H1Label" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                <rect key="frame" x="24.000000000000007" y="40" width="116.66666666666669" height="40.666666666666657"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Welcome back,
+Lina</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RWq-Av-A8R">
+                                <rect key="frame" x="24" y="249.66666666666669" width="342" height="133.66666666666669"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wB-MS-24J" customClass="CustomTextField" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="PlaceHolderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LTe-Uf-icg" customClass="CustomPasswordTextField" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77.000000000000028" width="342" height="56.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="PlaceHolderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9c-81-aDj" customClass="CustomButtonTwo" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                <rect key="frame" x="226.66666666666663" y="399.33333333333331" width="139.33333333333337" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot password?"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonTitle" value="Button"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="button" value="Forgot Password"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DeE-Sr-sPX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RWq-Av-A8R" firstAttribute="centerY" secondItem="4XD-dm-yOB" secondAttribute="centerY" id="0gj-M9-ijy"/>
+                            <constraint firstItem="l2y-dO-ybv" firstAttribute="top" secondItem="4XD-dm-yOB" secondAttribute="top" constant="40" id="9nk-hn-TSy"/>
+                            <constraint firstItem="e9c-81-aDj" firstAttribute="trailing" secondItem="RWq-Av-A8R" secondAttribute="trailing" id="GOe-Pn-aVq"/>
+                            <constraint firstItem="e9c-81-aDj" firstAttribute="top" secondItem="RWq-Av-A8R" secondAttribute="bottom" constant="16" id="JzQ-uT-3bs"/>
+                            <constraint firstItem="RWq-Av-A8R" firstAttribute="height" relation="greaterThanOrEqual" secondItem="4XD-dm-yOB" secondAttribute="height" multiplier="0.18" constant="20" id="SHT-sf-WTR"/>
+                            <constraint firstItem="RWq-Av-A8R" firstAttribute="leading" secondItem="4XD-dm-yOB" secondAttribute="leading" constant="24" id="fOT-rS-jsv"/>
+                            <constraint firstAttribute="trailing" secondItem="RWq-Av-A8R" secondAttribute="trailing" constant="24" id="rpf-PY-IZP"/>
+                            <constraint firstItem="l2y-dO-ybv" firstAttribute="leading" secondItem="4XD-dm-yOB" secondAttribute="leading" constant="24" id="t1r-Kf-HSu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfEmail" destination="2wB-MS-24J" id="Isi-vt-Dsn"/>
+                        <outlet property="tfPassword" destination="LTe-Uf-icg" id="lUa-dl-rFC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RI7-M0-1IX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3143" y="-273"/>
+        </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="E17-N0-3sp">
+            <objects>
+                <viewController id="QgU-3J-jEb" customClass="SignUpVC" customModule="VerooDeliveryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cMM-rM-fPN" customClass="CustomView" customModule="VerooDeliveryApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="633"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="b46-Ty-i87">
+                                <rect key="frame" x="24" y="40" width="227" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yog-1g-e0X" customClass="H1Label" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="227" height="20.333333333333332"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Hello there,">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXx-zn-CfM" customClass="H2Label" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="32.333333333333329" width="227" height="40.666666666666671"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Enter your informations below
+or login with a social account</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4if-OC-xpw">
+                                <rect key="frame" x="24" y="147.00000000000003" width="342" height="324.66666666666674"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eG4-oC-yZm" customClass="CustomTextField" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="alert" returnKeyType="next" textContentType="name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="PlaceHolderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6h4-Hh-57g" customClass="CustomTextField" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="86" width="342" height="66.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="PlaceHolderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eHw-5z-oM5" customClass="CustomTextField" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="172.33333333333331" width="342" height="66.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="next" textContentType="tel"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="PlaceHolderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5xB-mJ-cD0" customClass="CustomPasswordTextField" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="258.66666666666669" width="342" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="done" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="PlaceHolderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m8y-gh-QIC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b46-Ty-i87" firstAttribute="leading" secondItem="cMM-rM-fPN" secondAttribute="leading" constant="24" id="Nz3-k3-nGE"/>
+                            <constraint firstItem="b46-Ty-i87" firstAttribute="top" secondItem="cMM-rM-fPN" secondAttribute="top" constant="40" id="S1E-LU-7V7"/>
+                            <constraint firstItem="4if-OC-xpw" firstAttribute="top" secondItem="b46-Ty-i87" secondAttribute="bottom" multiplier="1.3" id="b4M-uj-lgb"/>
+                            <constraint firstAttribute="trailing" secondItem="4if-OC-xpw" secondAttribute="trailing" constant="24" id="izK-1y-evs"/>
+                            <constraint firstItem="4if-OC-xpw" firstAttribute="leading" secondItem="cMM-rM-fPN" secondAttribute="leading" constant="24" id="uYg-5m-B2E"/>
+                            <constraint firstItem="4if-OC-xpw" firstAttribute="height" secondItem="cMM-rM-fPN" secondAttribute="height" multiplier="0.45" constant="40" id="w0W-18-And"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfEmail" destination="6h4-Hh-57g" id="FFB-Q4-FpK"/>
+                        <outlet property="tfName" destination="eG4-oC-yZm" id="CXW-ka-Q1G"/>
+                        <outlet property="tfPassword" destination="5xB-mJ-cD0" id="2WF-lH-ZnO"/>
+                        <outlet property="tfPhoneNo" destination="eHw-5z-oM5" id="2Gh-eg-qhX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXD-rh-9aq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2425" y="-273"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appleIcon" width="64" height="64"/>
+        <image name="googleIcon" width="64" height="64"/>
+        <image name="profileImage" width="66" height="66"/>
+        <namedColor name="PlaceHolderColor">
+            <color red="0.40000000000000002" green="0.40784313725490196" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

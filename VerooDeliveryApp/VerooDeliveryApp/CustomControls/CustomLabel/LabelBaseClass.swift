@@ -45,3 +45,53 @@ class H2Label: LabelBaseClass {
     }
 
 }
+
+// MARK: Label Custom Class
+class H3Label: LabelBaseClass {
+
+    // Intializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.font = UIFont(name: R.font.readexProBold.fontName, size: 20)
+        self.textColor = UIColor.labelTextColor
+    }
+
+}
+
+
+// MARK: Label Custom Class
+class H4Label: LabelBaseClass {
+
+    // Intializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.font = UIFont(name: R.font.readexProExtraLight.fontName, size: 13)
+        self.textColor = UIColor.labelTextColor
+    }
+
+}
+
+// MARK: Label Custom Class
+class H5Label: LabelBaseClass {
+
+    // Intializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.font = UIFont(name: R.font.readexProMedium.fontName, size: 17)
+        self.textColor = UIColor.labelTextColor
+    }
+
+}
+
