@@ -12,7 +12,9 @@ extension UIColor {
     static let buttonTextColor = R.color.labelTextColor() ?? defaultColor
     static let labelTextColor = R.color.labelTextColor() ?? defaultColor
     static let indicatorColor = R.color.indicatorColor() ?? defaultColor
-
+    static let headerBackgroundColor = R.color.headerColor() ?? defaultColor
+    static let footerLabelColor = R.color.red() ?? defaultColor
+    
 }
 
     

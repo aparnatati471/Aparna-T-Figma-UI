@@ -12,7 +12,7 @@ class CustomPasswordTextField: CustomTextField {
         super.init(coder: coder)
         rightIcon()
     }
-    
+
     ///This function will add icon on right end of the Textfield
     public func rightIcon() {
         let eyeButton = UIButton()

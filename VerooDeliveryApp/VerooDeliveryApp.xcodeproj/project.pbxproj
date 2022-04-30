@@ -115,6 +115,27 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		A4705723284F62C0007A78BD /* Authentications */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB1155281D04D50005A122 /* Main.storyboard */,
+				A47C556828214E47009508BE /* SignInVC.swift */,
+				A47C556A28214E7D009508BE /* SignUpVC.swift */,
+			);
+			path = Authentications;
+			sourceTree = "<group>";
+		};
+		A4705724284F634F007A78BD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A4C347152822A694005E83DD /* ProfileScreen.storyboard */,
+				A4C347172822A85F005E83DD /* ProfileVC.swift */,
+				A412AB7F2822D116009348F3 /* ProfileCell.swift */,
+				A412AB812822D21E009348F3 /* ProfileDataClass.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		A4AB1143281D04D50005A122 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +159,8 @@
 		A4AB114E281D04D50005A122 /* VerooDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				A4705724284F634F007A78BD /* Profile */,
+				A4705723284F62C0007A78BD /* Authentications */,
 				A412388E2824EB7E00828E5C /* Coordinators */,
 				A4FAC5922823B2F4001255E7 /* OnboardingScreen */,
 				A4C7F9D82822588E00779F1B /* Extensions */,
@@ -146,13 +169,6 @@
 				A4AB114F281D04D50005A122 /* AppDelegate.swift */,
 				A4AB1151281D04D50005A122 /* SceneDelegate.swift */,
 				A4AB1153281D04D50005A122 /* ViewController.swift */,
-				A47C556A28214E7D009508BE /* SignUpVC.swift */,
-				A47C556828214E47009508BE /* SignInVC.swift */,
-				A4C347152822A694005E83DD /* ProfileScreen.storyboard */,
-				A4C347172822A85F005E83DD /* ProfileVC.swift */,
-				A412AB7F2822D116009348F3 /* ProfileCell.swift */,
-				A412AB812822D21E009348F3 /* ProfileDataClass.swift */,
-				A4AB1155281D04D50005A122 /* Main.storyboard */,
 				A4AB1158281D04D70005A122 /* Assets.xcassets */,
 				A4AB115A281D04D70005A122 /* LaunchScreen.storyboard */,
 				A4AB115D281D04D70005A122 /* Info.plist */,

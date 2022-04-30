@@ -248,7 +248,7 @@
     </scenes>
     <resources>
         <image name="Edit" width="24" height="24"/>
-        <image name="Location" width="56" height="56"/>
+        <image name="Location" width="112" height="112"/>
         <image name="RightArrow" width="8" height="14"/>
         <image name="profileImage" width="66" height="66"/>
         <namedColor name="AccentColor">

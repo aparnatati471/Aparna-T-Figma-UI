@@ -91,3 +91,4 @@ iOSInjectionProject/
 Pods
 Podfile
 Podfile.lock
+R.generated.swift
