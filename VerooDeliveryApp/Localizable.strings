@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  VerooDeliveryApp
+
+  Created by Aparna Tati on 04/05/22.
+  
+*/
+
+"appName"           =   "Hello";
+"signUpButtonTitle" =   "Confirm";
+"signInButtonTitle" =   "Sign in";
