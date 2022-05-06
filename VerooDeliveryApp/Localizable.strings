@@ -6,6 +6,6 @@
   
 */
 
-"appName"           =   "Hello";
-"signUpButtonTitle" =   "Confirm";
-"signInButtonTitle" =   "Sign in";
+"appName" = "Hello";
+"signUpButtonTitle" = "Confirm";
+"signInButtonTitle" = "Sign in";

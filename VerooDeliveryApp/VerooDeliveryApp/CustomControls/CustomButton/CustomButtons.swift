@@ -17,13 +17,6 @@ class ButtonBaseClass: UIButton {
 // MARK: Custom Button Class
 class BottomButtons: ButtonBaseClass {
     
-    // IBInspectable for button title
-    @IBInspectable public var buttonTitle: String = "Button" {
-        didSet {
-            self.setTitle(buttonTitle, for: .normal)
-        }
-    }
-    
     // Intializers
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,9 +30,10 @@ class BottomButtons: ButtonBaseClass {
     
     ///This is function for how the button looks
     func setUpButton() {
-        self.layer.backgroundColor = UIColor.buttonBackgroundColor.cgColor
+        self.titleLabel?.font = R.font.readexProBold(size: 17)
+        self.titleLabel?.textAlignment = .center
         self.layer.cornerRadius = 30
-        self.titleLabel?.font = UIFont.init(name: R.font.readexProRegular.fontName, size: 17)
+        self.backgroundColor = UIColor.buttonBackgroundColor
         self.tintColor = UIColor.black
     }
 
@@ -60,7 +54,7 @@ class CustomButtonTwo: ButtonBaseClass {
     
     ///This is function for how the button looks
     func setUpButton() {
-        self.titleLabel?.font = UIFont.init(name: R.font.readexProRegular.fontName, size: 15)
+        self.titleLabel?.font = R.font.readexProRegular(size: 15)
         self.tintColor = UIColor.indicatorColor
     }
 
@@ -82,7 +76,7 @@ class TopButtons: ButtonBaseClass {
     
     ///This is function for how the button looks
     func setUpButton() {
-        self.titleLabel?.font = UIFont.init(name: R.font.readexProBold.fontName, size: 20)
+        self.titleLabel?.font = R.font.readexProMedium(size: 20)
         self.tintColor = UIColor.buttonTextColor
         self.contentHorizontalAlignment = .left
     }

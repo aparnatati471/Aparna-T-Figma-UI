@@ -95,19 +95,26 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `ViewController`, and contains static references to 2 segues.
     struct viewController {
       /// Segue identifier `SignInVC`.
+      static let signInVC: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, ViewController, SignInVC> = Rswift.StoryboardSegueIdentifier(identifier: "SignInVC")
+      /// Segue identifier `SignUpVC`.
+      static let signUpVC: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, ViewController, SignUpVC> = Rswift.StoryboardSegueIdentifier(identifier: "SignUpVC")
 
       #if os(iOS) || os(tvOS)
       /// Optionally returns a typed version of segue `SignInVC`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-   
+      static func signInVC(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, ViewController, SignInVC>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.viewController.signInVC, segue: segue)
+      }
       #endif
 
       #if os(iOS) || os(tvOS)
       /// Optionally returns a typed version of segue `SignUpVC`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      
+      static func signUpVC(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, ViewController, SignUpVC>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.viewController.signUpVC, segue: segue)
+      }
       #endif
 
       fileprivate init() {}
@@ -301,7 +308,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 5 files.
+  /// This `R.file` struct is generated, and contains static references to 6 files.
   struct file {
     /// Resource file `ReadexPro-Bold.ttf`.
     static let readexProBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "ReadexPro-Bold", pathExtension: "ttf")
@@ -313,6 +320,8 @@ struct R: Rswift.Validatable {
     static let readexProMediumTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "ReadexPro-Medium", pathExtension: "ttf")
     /// Resource file `ReadexPro-Regular.ttf`.
     static let readexProRegularTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "ReadexPro-Regular", pathExtension: "ttf")
+    /// Resource file `ReadexPro-SemiBold.ttf`.
+    static let readexProSemiBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "ReadexPro-SemiBold", pathExtension: "ttf")
 
     /// `bundle.url(forResource: "ReadexPro-Bold", withExtension: "ttf")`
     static func readexProBoldTtf(_: Void = ()) -> Foundation.URL? {
@@ -344,10 +353,16 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
 
+    /// `bundle.url(forResource: "ReadexPro-SemiBold", withExtension: "ttf")`
+    static func readexProSemiBoldTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.readexProSemiBoldTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
     fileprivate init() {}
   }
 
-  /// This `R.font` struct is generated, and contains static references to 5 fonts.
+  /// This `R.font` struct is generated, and contains static references to 6 fonts.
   struct font: Rswift.Validatable {
     /// Font `ReadexPro-Bold`.
     static let readexProBold = Rswift.FontResource(fontName: "ReadexPro-Bold")
@@ -359,6 +374,8 @@ struct R: Rswift.Validatable {
     static let readexProMedium = Rswift.FontResource(fontName: "ReadexPro-Medium")
     /// Font `ReadexPro-Regular`.
     static let readexProRegular = Rswift.FontResource(fontName: "ReadexPro-Regular")
+    /// Font `ReadexPro-SemiBold`.
+    static let readexProSemiBold = Rswift.FontResource(fontName: "ReadexPro-SemiBold")
 
     /// `UIFont(name: "ReadexPro-Bold", size: ...)`
     static func readexProBold(size: CGFloat) -> UIKit.UIFont? {
@@ -385,12 +402,18 @@ struct R: Rswift.Validatable {
       return UIKit.UIFont(resource: readexProRegular, size: size)
     }
 
+    /// `UIFont(name: "ReadexPro-SemiBold", size: ...)`
+    static func readexProSemiBold(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: readexProSemiBold, size: size)
+    }
+
     static func validate() throws {
       if R.font.readexProBold(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'ReadexPro-Bold' could not be loaded, is 'ReadexPro-Bold.ttf' added to the UIAppFonts array in this targets Info.plist?") }
       if R.font.readexProExtraLight(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'ReadexPro-ExtraLight' could not be loaded, is 'ReadexPro-ExtraLight.ttf' added to the UIAppFonts array in this targets Info.plist?") }
       if R.font.readexProLight(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'ReadexPro-Light' could not be loaded, is 'ReadexPro-Light.ttf' added to the UIAppFonts array in this targets Info.plist?") }
       if R.font.readexProMedium(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'ReadexPro-Medium' could not be loaded, is 'ReadexPro-Medium.ttf' added to the UIAppFonts array in this targets Info.plist?") }
       if R.font.readexProRegular(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'ReadexPro-Regular' could not be loaded, is 'ReadexPro-Regular.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.readexProSemiBold(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'ReadexPro-SemiBold' could not be loaded, is 'ReadexPro-SemiBold.ttf' added to the UIAppFonts array in this targets Info.plist?") }
     }
 
     fileprivate init() {}
