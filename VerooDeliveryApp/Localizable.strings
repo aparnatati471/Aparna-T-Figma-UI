@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  VerooDeliveryApp
+
+  Created by Aparna Tati on 04/05/22.
+  
+*/
+
+"appName"               = "Hello";
+
+//Signup and Signin Screen Strings
+"signUpButtonTitle"     = "Confirm";
+"signInButtonTitle"     = "Sign in";
+
+//Profile Screen Strings
+"Address"               = "Addresses";
+"Favourites"            = "Favourite Products";
+"Orders"                = "Previous Orders";
+"Payment"               = "Payment Methods";
+"Contact"               = "Contact Us";
+"profile"               = "My profile";
+"buttonClick"           = "Button Clicked";
+
+//Onboarding Screen Strings
+"TitleOne"              = "Peppermint Mocha";
+"TitleTwo"              = "Chai Latte";
+"SubtitleOne"           = "A holiday classic, our Peppermint Mocha infuses hand-pulled espresso with rich chocolate sauce, sweet peppermint, topped with a cloud of whipped cream.";
+"SubtitleTwo"           = "Our Masala Chai latte is Peets take on a traditional Indian cup. Our own blend of teas and spices, lightly sweetened, with steamed milk.";
+"Main"                  = "Main";
+"Profile"               = "ProfileScreen";
+"Onboard"               = "Onboarding";
