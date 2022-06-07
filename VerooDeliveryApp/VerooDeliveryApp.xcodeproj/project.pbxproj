@@ -7,15 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4387C172826441B00645004 /* ReadexPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4387C112826441B00645004 /* ReadexPro-Regular.ttf */; };
+		A4387C182826441B00645004 /* ReadexPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4387C122826441B00645004 /* ReadexPro-SemiBold.ttf */; };
+		A4387C192826441B00645004 /* ReadexPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4387C132826441B00645004 /* ReadexPro-Light.ttf */; };
+		A4387C1A2826441B00645004 /* ReadexPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4387C142826441B00645004 /* ReadexPro-Bold.ttf */; };
+		A4387C1B2826441B00645004 /* ReadexPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4387C152826441B00645004 /* ReadexPro-ExtraLight.ttf */; };
+		A4387C1C2826441B00645004 /* ReadexPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4387C162826441B00645004 /* ReadexPro-Medium.ttf */; };
+		A47C556928214E47009508BE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C556828214E47009508BE /* SignInVC.swift */; };
+		A47C556B28214E7D009508BE /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C556A28214E7D009508BE /* SignUpVC.swift */; };
 		A4AB1150281D04D50005A122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB114F281D04D50005A122 /* AppDelegate.swift */; };
 		A4AB1152281D04D50005A122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB1151281D04D50005A122 /* SceneDelegate.swift */; };
 		A4AB1154281D04D50005A122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB1153281D04D50005A122 /* ViewController.swift */; };
 		A4AB1157281D04D50005A122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AB1155281D04D50005A122 /* Main.storyboard */; };
 		A4AB1159281D04D70005A122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4AB1158281D04D70005A122 /* Assets.xcassets */; };
 		A4AB115C281D04D70005A122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AB115A281D04D70005A122 /* LaunchScreen.storyboard */; };
+		A4AB1169281D2AE30005A122 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB1168281D2AE30005A122 /* CustomTextField.swift */; };
+		A4AB116B281D3C8B0005A122 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB116A281D3C8B0005A122 /* CustomView.swift */; };
+		A4C7F9DA282258B900779F1B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C7F9D9282258B900779F1B /* Extensions.swift */; };
+		A4C7F9DE282290C900779F1B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C7F9DD282290C900779F1B /* R.generated.swift */; };
+		A4C7F9E22822912F00779F1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C7F9E12822912F00779F1B /* Localizable.strings */; };
+		A4FEAD8E281FF53A00D17E4A /* CustomPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FEAD8D281FF53A00D17E4A /* CustomPasswordTextField.swift */; };
+		A4FEAD902820002B00D17E4A /* LabelBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FEAD8F2820002B00D17E4A /* LabelBaseClass.swift */; };
+		A4FEAD9B282010EA00D17E4A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FEAD9A282010EA00D17E4A /* Color.swift */; };
+		A4FEAD9E2820183B00D17E4A /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FEAD9D2820183B00D17E4A /* CustomButtons.swift */; };
+		D8841E12969002D3DB898EA9 /* Pods_VerooDeliveryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB976BA569CA974F1A36BA2 /* Pods_VerooDeliveryApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50220A644B6292D1DD2AEDA4 /* Pods-VerooDeliveryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerooDeliveryApp.debug.xcconfig"; path = "Target Support Files/Pods-VerooDeliveryApp/Pods-VerooDeliveryApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A4387C112826441B00645004 /* ReadexPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReadexPro-Regular.ttf"; sourceTree = "<group>"; };
+		A4387C122826441B00645004 /* ReadexPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReadexPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		A4387C132826441B00645004 /* ReadexPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReadexPro-Light.ttf"; sourceTree = "<group>"; };
+		A4387C142826441B00645004 /* ReadexPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReadexPro-Bold.ttf"; sourceTree = "<group>"; };
+		A4387C152826441B00645004 /* ReadexPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReadexPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		A4387C162826441B00645004 /* ReadexPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReadexPro-Medium.ttf"; sourceTree = "<group>"; };
+		A47C556828214E47009508BE /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		A47C556A28214E7D009508BE /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		A4AB114C281D04D50005A122 /* VerooDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerooDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AB114F281D04D50005A122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4AB1151281D04D50005A122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +51,17 @@
 		A4AB1158281D04D70005A122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4AB115B281D04D70005A122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4AB115D281D04D70005A122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4AB1168281D2AE30005A122 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A4AB116A281D3C8B0005A122 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		A4C7F9D9282258B900779F1B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A4C7F9DD282290C900779F1B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		A4C7F9E12822912F00779F1B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A4FEAD8D281FF53A00D17E4A /* CustomPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPasswordTextField.swift; sourceTree = "<group>"; };
+		A4FEAD8F2820002B00D17E4A /* LabelBaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelBaseClass.swift; sourceTree = "<group>"; };
+		A4FEAD9A282010EA00D17E4A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A4FEAD9D2820183B00D17E4A /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
+		A57829C70D180D47AE0C3579 /* Pods-VerooDeliveryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerooDeliveryApp.release.xcconfig"; path = "Target Support Files/Pods-VerooDeliveryApp/Pods-VerooDeliveryApp.release.xcconfig"; sourceTree = "<group>"; };
+		EBB976BA569CA974F1A36BA2 /* Pods_VerooDeliveryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerooDeliveryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8841E12969002D3DB898EA9 /* Pods_VerooDeliveryApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A412389728253EDD00828E5C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A47C556A28214E7D009508BE /* SignUpVC.swift */,
+				A47C556828214E47009508BE /* SignInVC.swift */,
+				A4AB1155281D04D50005A122 /* Main.storyboard */,
+				A4AB1153281D04D50005A122 /* ViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A4387C102826441B00645004 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A4387C112826441B00645004 /* ReadexPro-Regular.ttf */,
+				A4387C122826441B00645004 /* ReadexPro-SemiBold.ttf */,
+				A4387C132826441B00645004 /* ReadexPro-Light.ttf */,
+				A4387C142826441B00645004 /* ReadexPro-Bold.ttf */,
+				A4387C152826441B00645004 /* ReadexPro-ExtraLight.ttf */,
+				A4387C162826441B00645004 /* ReadexPro-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		A4AB1143281D04D50005A122 = {
 			isa = PBXGroup;
 			children = (
+				A4C7F9E12822912F00779F1B /* Localizable.strings */,
+				A4C7F9DD282290C900779F1B /* R.generated.swift */,
 				A4AB114E281D04D50005A122 /* VerooDeliveryApp */,
 				A4AB114D281D04D50005A122 /* Products */,
+				EC0E5988238194C35620E476 /* Pods */,
+				AD44DFC923349AE7B0E5C536 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +123,79 @@
 		A4AB114E281D04D50005A122 /* VerooDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				A4387C102826441B00645004 /* Fonts */,
+				A412389728253EDD00828E5C /* Authentication */,
+				A4C7F9D82822588E00779F1B /* Extensions */,
+				A4AB1163281D08E70005A122 /* CustomControls */,
 				A4AB114F281D04D50005A122 /* AppDelegate.swift */,
 				A4AB1151281D04D50005A122 /* SceneDelegate.swift */,
-				A4AB1153281D04D50005A122 /* ViewController.swift */,
-				A4AB1155281D04D50005A122 /* Main.storyboard */,
 				A4AB1158281D04D70005A122 /* Assets.xcassets */,
 				A4AB115A281D04D70005A122 /* LaunchScreen.storyboard */,
 				A4AB115D281D04D70005A122 /* Info.plist */,
 			);
 			path = VerooDeliveryApp;
+			sourceTree = "<group>";
+		};
+		A4AB1163281D08E70005A122 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				A4FEAD9C282016C600D17E4A /* CustomButton */,
+				A4FEAD9928200E6900D17E4A /* CustomTextField */,
+				A4FEAD9628200DAA00D17E4A /* CustomLabel */,
+				A4AB116A281D3C8B0005A122 /* CustomView.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		A4C7F9D82822588E00779F1B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4C7F9D9282258B900779F1B /* Extensions.swift */,
+				A4FEAD9A282010EA00D17E4A /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A4FEAD9628200DAA00D17E4A /* CustomLabel */ = {
+			isa = PBXGroup;
+			children = (
+				A4FEAD8F2820002B00D17E4A /* LabelBaseClass.swift */,
+			);
+			path = CustomLabel;
+			sourceTree = "<group>";
+		};
+		A4FEAD9928200E6900D17E4A /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB1168281D2AE30005A122 /* CustomTextField.swift */,
+				A4FEAD8D281FF53A00D17E4A /* CustomPasswordTextField.swift */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		A4FEAD9C282016C600D17E4A /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				A4FEAD9D2820183B00D17E4A /* CustomButtons.swift */,
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
+		AD44DFC923349AE7B0E5C536 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBB976BA569CA974F1A36BA2 /* Pods_VerooDeliveryApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC0E5988238194C35620E476 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50220A644B6292D1DD2AEDA4 /* Pods-VerooDeliveryApp.debug.xcconfig */,
+				A57829C70D180D47AE0C3579 /* Pods-VerooDeliveryApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4AB1160281D04D70005A122 /* Build configuration list for PBXNativeTarget "VerooDeliveryApp" */;
 			buildPhases = (
+				E179EFD6A8680220F2D835B6 /* [CP] Check Pods Manifest.lock */,
+				A4AE660028212BC2003C7D1D /* ShellScript */,
 				A4AB1148281D04D50005A122 /* Sources */,
 				A4AB1149281D04D50005A122 /* Frameworks */,
 				A4AB114A281D04D50005A122 /* Resources */,
+				B26E3CAB99A7C981CAEBF16F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +259,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4387C1C2826441B00645004 /* ReadexPro-Medium.ttf in Resources */,
+				A4387C192826441B00645004 /* ReadexPro-Light.ttf in Resources */,
 				A4AB115C281D04D70005A122 /* LaunchScreen.storyboard in Resources */,
 				A4AB1159281D04D70005A122 /* Assets.xcassets in Resources */,
+				A4C7F9E22822912F00779F1B /* Localizable.strings in Resources */,
+				A4387C172826441B00645004 /* ReadexPro-Regular.ttf in Resources */,
+				A4387C182826441B00645004 /* ReadexPro-SemiBold.ttf in Resources */,
+				A4387C1A2826441B00645004 /* ReadexPro-Bold.ttf in Resources */,
+				A4387C1B2826441B00645004 /* ReadexPro-ExtraLight.ttf in Resources */,
 				A4AB1157281D04D50005A122 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A4AE660028212BC2003C7D1D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		B26E3CAB99A7C981CAEBF16F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerooDeliveryApp/Pods-VerooDeliveryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerooDeliveryApp/Pods-VerooDeliveryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VerooDeliveryApp/Pods-VerooDeliveryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E179EFD6A8680220F2D835B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VerooDeliveryApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A4AB1148281D04D50005A122 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4FEAD902820002B00D17E4A /* LabelBaseClass.swift in Sources */,
+				A4C7F9DE282290C900779F1B /* R.generated.swift in Sources */,
+				A4FEAD9B282010EA00D17E4A /* Color.swift in Sources */,
+				A4AB116B281D3C8B0005A122 /* CustomView.swift in Sources */,
+				A47C556928214E47009508BE /* SignInVC.swift in Sources */,
 				A4AB1154281D04D50005A122 /* ViewController.swift in Sources */,
+				A4FEAD8E281FF53A00D17E4A /* CustomPasswordTextField.swift in Sources */,
+				A4AB1169281D2AE30005A122 /* CustomTextField.swift in Sources */,
 				A4AB1150281D04D50005A122 /* AppDelegate.swift in Sources */,
+				A4FEAD9E2820183B00D17E4A /* CustomButtons.swift in Sources */,
 				A4AB1152281D04D50005A122 /* SceneDelegate.swift in Sources */,
+				A47C556B28214E7D009508BE /* SignUpVC.swift in Sources */,
+				A4C7F9DA282258B900779F1B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +497,7 @@
 		};
 		A4AB1161281D04D70005A122 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50220A644B6292D1DD2AEDA4 /* Pods-VerooDeliveryApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +525,7 @@
 		};
 		A4AB1162281D04D70005A122 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57829C70D180D47AE0C3579 /* Pods-VerooDeliveryApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
