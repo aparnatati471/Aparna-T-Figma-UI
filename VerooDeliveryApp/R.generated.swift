@@ -687,7 +687,7 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 15 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 17 localization keys.
     struct localizable {
       /// Value: A holiday classic, our Peppermint Mocha infuses hand-pulled espresso with rich chocolate sauce, sweet peppermint, topped with a cloud of whipped cream.
       static let subtitleOne = Rswift.StringResource(key: "SubtitleOne", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
@@ -707,6 +707,8 @@ struct R: Rswift.Validatable {
       static let appName = Rswift.StringResource(key: "appName", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Main
       static let main = Rswift.StringResource(key: "Main", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: My profile
+      static let myProfile = Rswift.StringResource(key: "MyProfile", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Onboarding
       static let onboard = Rswift.StringResource(key: "Onboard", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Our Masala Chai latte is Peets take on a traditional Indian cup. Our own blend of teas and spices, lightly sweetened, with steamed milk.
@@ -717,7 +719,9 @@ struct R: Rswift.Validatable {
       static let titleOne = Rswift.StringResource(key: "TitleOne", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Previous Orders
       static let orders = Rswift.StringResource(key: "Orders", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Sign in
+      /// Value: ProfileScreen
+      static let profile = Rswift.StringResource(key: "Profile", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Sign In
       static let signInButtonTitle = Rswift.StringResource(key: "signInButtonTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
 
       /// Value: A holiday classic, our Peppermint Mocha infuses hand-pulled espresso with rich chocolate sauce, sweet peppermint, topped with a cloud of whipped cream.
@@ -837,6 +841,19 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("Main", bundle: bundle, comment: "")
       }
 
+      /// Value: My profile
+      static func myProfile(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("MyProfile", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "MyProfile"
+        }
+
+        return NSLocalizedString("MyProfile", bundle: bundle, comment: "")
+      }
+
       /// Value: Onboarding
       static func onboard(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
@@ -902,7 +919,20 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("Orders", bundle: bundle, comment: "")
       }
 
-      /// Value: Sign in
+      /// Value: ProfileScreen
+      static func profile(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("Profile", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "Profile"
+        }
+
+        return NSLocalizedString("Profile", bundle: bundle, comment: "")
+      }
+
+      /// Value: Sign In
       static func signInButtonTitle(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("signInButtonTitle", bundle: hostingBundle, comment: "")
@@ -991,6 +1021,7 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "googleIcon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'googleIcon' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "profileImage", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'profileImage' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "LabelTextColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'LabelTextColor' is used in storyboard 'Main', but couldn't be loaded.") }
           if UIKit.UIColor(named: "PlaceHolderColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'PlaceHolderColor' is used in storyboard 'Main', but couldn't be loaded.") }
         }
         if _R.storyboard.main().viewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'viewController' could not be loaded from storyboard 'Main' as 'ViewController'.") }

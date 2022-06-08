@@ -1,8 +1,7 @@
 import UIKit
 
-class ProfileVC: UIViewController, CoordinatorBoard {
+class ProfileVC: BaseViewController<ProfileCoordinator, BaseViewModel> {
     
-    weak var profileCoordinator: ProfileCoordinator?
     @IBOutlet weak var roundedView: UIView!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var profileTableView: UITableView!
@@ -26,7 +25,7 @@ class ProfileVC: UIViewController, CoordinatorBoard {
         let barButton = UIBarButtonItem(image: R.image.backArrow(), style: .done, target: self, action: #selector(backClicked))
         navigationController?.setTintColor(UIColor.labelTextColor)
         self.navigationItem.leftBarButtonItem = barButton
-        self.navigationItem.title = R.string.localizable.appName()
+        self.navigationItem.title = R.string.localizable.myProfile()
     }
     
     @objc func backClicked() {

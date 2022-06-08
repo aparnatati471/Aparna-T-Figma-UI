@@ -65,7 +65,6 @@
                                                                 <buttonConfiguration key="configuration" style="plain" image="profileImage" imagePlacement="trailing" imagePadding="0.0"/>
                                                                 <connections>
                                                                     <action selector="profileClicked:" destination="jAG-nj-6Sy" eventType="touchUpInside" id="xoc-rO-YcO"/>
-                                                                    <segue destination="WJs-1g-KdE" kind="show" id="l3O-jY-5ZC"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -101,12 +100,15 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kie-6w-R1R" customClass="BottomButtons" customModule="VerooDeliveryApp" customModuleProvider="target">
-                                                                <rect key="frame" x="228" y="0.0" width="138" height="64"/>
+                                                                <rect key="frame" x="208.66666666666663" y="0.0" width="157.33333333333337" height="64"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Sign In "/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="buttonTitle" value="Sign In"/>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clicked:" destination="jAG-nj-6Sy" eventType="touchUpInside" id="bW1-6J-oPZ"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -115,7 +117,7 @@
                                                             <constraint firstItem="bKp-JF-sVR" firstAttribute="leading" secondItem="xhV-sT-cnp" secondAttribute="leading" constant="24" id="C3Y-17-5Aq"/>
                                                             <constraint firstAttribute="bottom" secondItem="bKp-JF-sVR" secondAttribute="bottom" id="LaG-qz-5Nr"/>
                                                             <constraint firstItem="bKp-JF-sVR" firstAttribute="centerY" secondItem="xhV-sT-cnp" secondAttribute="centerY" id="Uab-8W-FpJ"/>
-                                                            <constraint firstItem="Kie-6w-R1R" firstAttribute="width" relation="greaterThanOrEqual" secondItem="xhV-sT-cnp" secondAttribute="width" multiplier="0.2" constant="60" id="g9d-5H-5JF"/>
+                                                            <constraint firstItem="Kie-6w-R1R" firstAttribute="width" relation="greaterThanOrEqual" secondItem="xhV-sT-cnp" secondAttribute="width" multiplier="0.25" constant="60" id="g9d-5H-5JF"/>
                                                             <constraint firstAttribute="trailing" secondItem="Kie-6w-R1R" secondAttribute="trailing" constant="24" id="geq-3y-VTF"/>
                                                             <constraint firstItem="Kie-6w-R1R" firstAttribute="top" secondItem="xhV-sT-cnp" secondAttribute="top" id="tTF-e7-eRJ"/>
                                                         </constraints>
@@ -164,6 +166,10 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Ujx-EF-X9x">
+                                <rect key="frame" x="176.66666666666666" y="408.66666666666669" width="37" height="37"/>
+                                <color key="color" name="LabelTextColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="56X-Qf-C0F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -173,6 +179,8 @@
                             <constraint firstItem="Mhk-UU-wt7" firstAttribute="height" secondItem="56X-Qf-C0F" secondAttribute="height" multiplier="0.09" id="FIT-Mr-hz6"/>
                             <constraint firstItem="56X-Qf-C0F" firstAttribute="bottom" secondItem="olI-Ss-r4N" secondAttribute="bottom" id="Qnm-po-ROr"/>
                             <constraint firstItem="olI-Ss-r4N" firstAttribute="leading" secondItem="56X-Qf-C0F" secondAttribute="leading" id="UkM-Oc-WEP"/>
+                            <constraint firstItem="Ujx-EF-X9x" firstAttribute="centerY" secondItem="56X-Qf-C0F" secondAttribute="centerY" id="WnO-4w-R7o"/>
+                            <constraint firstItem="Ujx-EF-X9x" firstAttribute="centerX" secondItem="56X-Qf-C0F" secondAttribute="centerX" id="e4n-9n-7LL"/>
                             <constraint firstItem="olI-Ss-r4N" firstAttribute="top" secondItem="56X-Qf-C0F" secondAttribute="top" id="ghN-Ge-VKB"/>
                             <constraint firstItem="56X-Qf-C0F" firstAttribute="trailing" secondItem="5YD-Fm-LmD" secondAttribute="trailing" id="jIR-Pg-Uhy"/>
                             <constraint firstItem="56X-Qf-C0F" firstAttribute="top" secondItem="5YD-Fm-LmD" secondAttribute="top" id="yz3-UX-pZf"/>
@@ -180,6 +188,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="Ujx-EF-X9x" id="WdV-UT-X6y"/>
                         <outlet property="btnSignIn" destination="XUb-Sg-KqR" id="TXg-nW-cdf"/>
                         <outlet property="btnSignUp" destination="pYf-t6-Dwe" id="MSk-cy-Bet"/>
                         <outlet property="button" destination="Kie-6w-R1R" id="f1L-sr-UMf"/>
@@ -190,16 +199,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fqk-c0-w1u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2565" y="-1062"/>
-        </scene>
-        <!--ProfileScreen-->
-        <scene sceneID="kKW-Bc-7fh">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ProfileScreen" id="WJs-1g-KdE" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="bpg-v0-vYD"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="etY-vE-GWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3242" y="-1301"/>
         </scene>
         <!--Sign InVC-->
         <scene sceneID="mGO-Bd-NC9">
@@ -413,6 +412,9 @@ or login with a social account</string>
         <image name="appleIcon" width="64" height="64"/>
         <image name="googleIcon" width="64" height="64"/>
         <image name="profileImage" width="66" height="66"/>
+        <namedColor name="LabelTextColor">
+            <color red="0.87058823529411766" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="PlaceHolderColor">
             <color red="0.40000000000000002" green="0.40784313725490196" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

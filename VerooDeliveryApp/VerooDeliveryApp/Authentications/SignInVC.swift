@@ -2,7 +2,7 @@ import UIKit
 
 class SignInVC: UIViewController {
 
-    // Outlets
+    //MARK: - Outlets
     @IBOutlet weak var tfPassword: CustomPasswordTextField!
     @IBOutlet weak var tfEmail: CustomTextField!
     

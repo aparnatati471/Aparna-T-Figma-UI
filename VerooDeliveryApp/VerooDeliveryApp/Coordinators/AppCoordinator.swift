@@ -34,7 +34,7 @@ class AppCoordinator: CoodinatorProtocol {
             print(UserDefaults.standard.hasOnboarded)
         } else {
             let vc = OnboardingVC.instantiateFromStoryBoard(from: StoryBoards.onboarding)
-            vc.onboardingCoordinator = self
+            vc.coordinator = self
             navigationController?.pushViewController(vc, animated: true)
             print(UserDefaults.standard.hasOnboarded)
 

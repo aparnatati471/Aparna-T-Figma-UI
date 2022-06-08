@@ -20,7 +20,7 @@ class AuthenticatorCoordinator: CoodinatorProtocol {
     // Class Methods
     func start() {
         let vc = ViewController.instantiateFromStoryBoard(from: StoryBoards.main)
-        vc.authenticatorCoordinator = self
+        vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
     }
     

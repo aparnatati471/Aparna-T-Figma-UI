@@ -14,6 +14,10 @@
 		A41238962824F20400828E5C /* AuthenticatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41238952824F20400828E5C /* AuthenticatorCoordinator.swift */; };
 		A412AB802822D116009348F3 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412AB7F2822D116009348F3 /* ProfileCell.swift */; };
 		A412AB822822D21E009348F3 /* ProfileDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412AB812822D21E009348F3 /* ProfileDataClass.swift */; };
+		A41442CA28507C3E00E32E7A /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41442C928507C3E00E32E7A /* ViewModelFactory.swift */; };
+		A41442CC285081B400E32E7A /* GenericClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41442CB285081B400E32E7A /* GenericClass.swift */; };
+		A41805092850A04A0099FF89 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41805082850A04A0099FF89 /* DataClass.swift */; };
+		A418050C2850D8070099FF89 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418050B2850D8070099FF89 /* AuthenticationViewModel.swift */; };
 		A4387C1E2829097500645004 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4387C1D2829097500645004 /* UserDefaults.swift */; };
 		A470571C284F543D007A78BD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470571A284F5427007A78BD /* R.generated.swift */; };
 		A470571D284F5446007A78BD /* ReadexPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A42ADF7F284F1EA1001A3E3F /* ReadexPro-Bold.ttf */; };
@@ -22,6 +26,9 @@
 		A4705720284F544C007A78BD /* ReadexPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A42ADF80284F1EA1001A3E3F /* ReadexPro-Medium.ttf */; };
 		A4705721284F544E007A78BD /* ReadexPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A42ADF83284F1EA1001A3E3F /* ReadexPro-Regular.ttf */; };
 		A4705722284F5451007A78BD /* ReadexPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4C347192822B396005E83DD /* ReadexPro-SemiBold.ttf */; };
+		A4705727284F694E007A78BD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4705726284F694E007A78BD /* BaseViewController.swift */; };
+		A4705729284F7906007A78BD /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4705728284F7906007A78BD /* BaseViewModel.swift */; };
+		A470572B284F7AEA007A78BD /* Dynamics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470572A284F7AEA007A78BD /* Dynamics.swift */; };
 		A47C556928214E47009508BE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C556828214E47009508BE /* SignInVC.swift */; };
 		A47C556B28214E7D009508BE /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C556A28214E7D009508BE /* SignUpVC.swift */; };
 		A4AB1150281D04D50005A122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB114F281D04D50005A122 /* AppDelegate.swift */; };
@@ -56,6 +63,10 @@
 		A41238952824F20400828E5C /* AuthenticatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorCoordinator.swift; sourceTree = "<group>"; };
 		A412AB7F2822D116009348F3 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		A412AB812822D21E009348F3 /* ProfileDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataClass.swift; sourceTree = "<group>"; };
+		A41442C928507C3E00E32E7A /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		A41442CB285081B400E32E7A /* GenericClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericClass.swift; sourceTree = "<group>"; };
+		A41805082850A04A0099FF89 /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
+		A418050B2850D8070099FF89 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		A42ADF7F284F1EA1001A3E3F /* ReadexPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ReadexPro-Bold.ttf"; path = "../../../../../Downloads/Readex_Pro/static/ReadexPro-Bold.ttf"; sourceTree = "<group>"; };
 		A42ADF80284F1EA1001A3E3F /* ReadexPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ReadexPro-Medium.ttf"; path = "../../../../../Downloads/Readex_Pro/static/ReadexPro-Medium.ttf"; sourceTree = "<group>"; };
 		A42ADF81284F1EA1001A3E3F /* ReadexPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ReadexPro-ExtraLight.ttf"; path = "../../../../../Downloads/Readex_Pro/static/ReadexPro-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -63,6 +74,9 @@
 		A42ADF83284F1EA1001A3E3F /* ReadexPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ReadexPro-Regular.ttf"; path = "../../../../../Downloads/Readex_Pro/static/ReadexPro-Regular.ttf"; sourceTree = "<group>"; };
 		A4387C1D2829097500645004 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		A470571A284F5427007A78BD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		A4705726284F694E007A78BD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A4705728284F7906007A78BD /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		A470572A284F7AEA007A78BD /* Dynamics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamics.swift; sourceTree = "<group>"; };
 		A47C556828214E47009508BE /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		A47C556A28214E7D009508BE /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		A4AB114C281D04D50005A122 /* VerooDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerooDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +129,14 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		A418050A2850D7F50099FF89 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A418050B2850D8070099FF89 /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		A4705723284F62C0007A78BD /* Authentications */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +156,18 @@
 				A412AB812822D21E009348F3 /* ProfileDataClass.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		A4705725284F6928007A78BD /* BaseSetup */ = {
+			isa = PBXGroup;
+			children = (
+				A4705726284F694E007A78BD /* BaseViewController.swift */,
+				A4705728284F7906007A78BD /* BaseViewModel.swift */,
+				A470572A284F7AEA007A78BD /* Dynamics.swift */,
+				A41442C928507C3E00E32E7A /* ViewModelFactory.swift */,
+				A41442CB285081B400E32E7A /* GenericClass.swift */,
+			);
+			path = BaseSetup;
 			sourceTree = "<group>";
 		};
 		A4AB1143281D04D50005A122 = {
@@ -159,6 +193,8 @@
 		A4AB114E281D04D50005A122 /* VerooDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				A418050A2850D7F50099FF89 /* ViewModels */,
+				A4705725284F6928007A78BD /* BaseSetup */,
 				A4705724284F634F007A78BD /* Profile */,
 				A4705723284F62C0007A78BD /* Authentications */,
 				A412388E2824EB7E00828E5C /* Coordinators */,
@@ -173,6 +209,7 @@
 				A4AB115A281D04D70005A122 /* LaunchScreen.storyboard */,
 				A4AB115D281D04D70005A122 /* Info.plist */,
 				A412388C2824D86100828E5C /* Data.swift */,
+				A41805082850A04A0099FF89 /* DataClass.swift */,
 			);
 			path = VerooDeliveryApp;
 			sourceTree = "<group>";
@@ -414,6 +451,7 @@
 				A470571C284F543D007A78BD /* R.generated.swift in Sources */,
 				A4FAC5962823CF80001255E7 /* OnboardingCell.swift in Sources */,
 				A412AB822822D21E009348F3 /* ProfileDataClass.swift in Sources */,
+				A4705729284F7906007A78BD /* BaseViewModel.swift in Sources */,
 				A4C347182822A85F005E83DD /* ProfileVC.swift in Sources */,
 				A4387C1E2829097500645004 /* UserDefaults.swift in Sources */,
 				A4FEAD9B282010EA00D17E4A /* Color.swift in Sources */,
@@ -421,15 +459,21 @@
 				A41238902824EB9800828E5C /* CoordinatorBoard.swift in Sources */,
 				A4FAC5982823D19D001255E7 /* OnboardingDataClass.swift in Sources */,
 				A47C556928214E47009508BE /* SignInVC.swift in Sources */,
+				A470572B284F7AEA007A78BD /* Dynamics.swift in Sources */,
 				A4FAC5942823C4C9001255E7 /* OnboardingVC.swift in Sources */,
+				A4705727284F694E007A78BD /* BaseViewController.swift in Sources */,
+				A41805092850A04A0099FF89 /* DataClass.swift in Sources */,
 				A4AB1154281D04D50005A122 /* ViewController.swift in Sources */,
 				A41238942824F01500828E5C /* ProfileCoordinator.swift in Sources */,
 				A412388D2824D86100828E5C /* Data.swift in Sources */,
+				A418050C2850D8070099FF89 /* AuthenticationViewModel.swift in Sources */,
 				A4FEAD8E281FF53A00D17E4A /* CustomPasswordTextField.swift in Sources */,
+				A41442CC285081B400E32E7A /* GenericClass.swift in Sources */,
 				A41238962824F20400828E5C /* AuthenticatorCoordinator.swift in Sources */,
 				A4AB1169281D2AE30005A122 /* CustomTextField.swift in Sources */,
 				A412AB802822D116009348F3 /* ProfileCell.swift in Sources */,
 				A4AB1150281D04D50005A122 /* AppDelegate.swift in Sources */,
+				A41442CA28507C3E00E32E7A /* ViewModelFactory.swift in Sources */,
 				A4FEAD9E2820183B00D17E4A /* CustomButtons.swift in Sources */,
 				A4AB1152281D04D50005A122 /* SceneDelegate.swift in Sources */,
 				A47C556B28214E7D009508BE /* SignUpVC.swift in Sources */,

@@ -20,7 +20,7 @@ class ProfileCoordinator: CoodinatorProtocol {
     // Class Methods
     func start() {
         let vc = ProfileVC.instantiateFromStoryBoard(from: StoryBoards.profile)
-        vc.profileCoordinator = self
+        vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
     }
     

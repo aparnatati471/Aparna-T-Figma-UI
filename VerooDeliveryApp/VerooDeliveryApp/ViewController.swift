@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController, CoordinatorBoard {
+class ViewController: BaseViewController<AuthenticatorCoordinator, BaseViewModel> {
     
     // Outlets
     @IBOutlet weak var signUpContainerView: UIView!
@@ -8,11 +8,12 @@ class ViewController: UIViewController, CoordinatorBoard {
     @IBOutlet weak var button: BottomButtons!
     @IBOutlet weak var btnSignIn: TopButtons!
     @IBOutlet weak var btnSignUp: TopButtons!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     // Variables
-    weak var authenticatorCoordinator: AuthenticatorCoordinator?
     var bottomBorder = CALayer()
     let thickness: CGFloat = 3.0
+    var vm = AuthenticationViewModel()
 
     // MARK: Overridden Method
     override func viewDidLoad() {
@@ -20,15 +21,26 @@ class ViewController: UIViewController, CoordinatorBoard {
         signUpContainerView.isHidden = true
         self.view.backgroundColor = UIColor.viewBackgroundColor
         navigationController?.navigationBar.tintColor = UIColor.white
+        getObservables()
         drawBottomLine(btnSignIn)
     }
     
     @IBAction func profileClicked(_ sender: UIButton) {
-        authenticatorCoordinator?.navigateToProfile()
+        coordinator?.navigateToProfile()
+    }
+    
+    @IBAction func clicked(_ sender: ButtonBaseClass) {
+        if(sender.titleLabel?.text == R.string.localizable.signInButtonTitle()) {
+            let user = UserLoginRequest(email: "eve.holt@reqres.in", password: "cityslicka")
+            vm.login(user: user)
+        } else {
+            let user = UserRegisterRequest(email: "eve.holt@reqres.in", password: "pistol")
+            vm.register(user: user)
+        }
     }
     
     // MARK: IBActions
-    @IBAction func signUpClicked(_ sender: TopButtons) {
+    @IBAction func signUpClicked(_ : TopButtons) {
         signInContainerView.isHidden = true
         signUpContainerView.isHidden = false
         button.titleLabel?.text = R.string.localizable.signUpButtonTitle()
@@ -40,6 +52,22 @@ class ViewController: UIViewController, CoordinatorBoard {
         signUpContainerView.isHidden = true
         button.titleLabel?.text = R.string.localizable.signInButtonTitle()
         drawBottomLine(btnSignIn)
+    }
+    
+    func getObservables() {
+        vm.authenticationToken.bind { token in
+            self.showAlert(title: "Success", message: "Now You can access \(String(describing: token))")
+        }
+        vm.failureMessage.bind { error in
+            self.showAlert(title: "Failure", message: "Please try again \(String(describing: error))")
+        }
+        vm.isLoading.bind { visibility in
+            if (visibility) {
+                self.activityIndicatorView.startAnimating()
+            } else {
+                self.activityIndicatorView.stopAnimating()
+            }
+        }
     }
     
     // MARK: Class Method
@@ -55,6 +83,12 @@ class ViewController: UIViewController, CoordinatorBoard {
             self.bottomBorder.backgroundColor = UIColor.indicatorColor.cgColor
             btn.layer.addSublayer(self.bottomBorder)
         }), completion: nil)
+    }
+    
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
    
 }

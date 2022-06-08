@@ -10,7 +10,7 @@
 
 //Signup and Signin Screen Strings
 "signUpButtonTitle"     = "Confirm";
-"signInButtonTitle"     = "Sign in";
+"signInButtonTitle"     = "Sign In";
 
 //Profile Screen Strings
 "Address"               = "Addresses";
@@ -18,7 +18,7 @@
 "Orders"                = "Previous Orders";
 "Payment"               = "Payment Methods";
 "Contact"               = "Contact Us";
-"profile"               = "My profile";
+"MyProfile"             = "My profile";
 "buttonClick"           = "Button Clicked";
 
 //Onboarding Screen Strings

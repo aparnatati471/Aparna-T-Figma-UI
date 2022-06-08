@@ -1,6 +1,6 @@
 import UIKit
 
-class OnboardingVC: UIViewController, CoordinatorBoard {
+class OnboardingVC: BaseViewController<AppCoordinator, BaseViewModel> {
     
     // MARK: Outlets
     @IBOutlet weak var onBoardingCollectionView: UICollectionView!
@@ -11,24 +11,22 @@ class OnboardingVC: UIViewController, CoordinatorBoard {
     // MARK: Variables
     var contents = [OnboardingDataClass]()
     var currentPage = 0
-    weak var onboardingCoordinator: AppCoordinator?
     
     // MARK: Overriden Method
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.viewBackgroundColor
-       // pageControl.numberOfPages = contents.count
     }
     
     // IBActions
     @IBAction func skipClicked(_ sender: BottomButtons) {
-        onboardingCoordinator?.navigateToAutheticator()
+        coordinator?.navigateToAutheticator()
     }
     
     @IBAction func nextClicked(_ sender: BottomButtons) {
         currentPage += 1
         if (currentPage >= Data.onBoardingData.count) {
-            onboardingCoordinator?.navigateToAutheticator()
+            coordinator?.navigateToAutheticator()
             UserDefaults.standard.hasOnboarded = true
         } else {
             let index = IndexPath(item: currentPage, section: 0)
