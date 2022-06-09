@@ -1,6 +1,6 @@
 import UIKit
 
-class SignInVC: UIViewController {
+class SignInVC: BaseViewController<AuthenticatorCoordinator, BaseViewModel> {
 
     //MARK: - Outlets
     @IBOutlet weak var tfPassword: CustomPasswordTextField!
@@ -12,6 +12,10 @@ class SignInVC: UIViewController {
         tfEmail.delegate = self
         tfPassword.delegate = self
         hideKeyboardWhenTappedAround()
+    }
+    
+    @IBAction func navigateToNotification(_ sender: CustomButtonTwo) {
+        coordinator?.navigateToNotification()
     }
     
 }

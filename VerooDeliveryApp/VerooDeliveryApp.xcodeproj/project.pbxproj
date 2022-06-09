@@ -19,6 +19,7 @@
 		A41805092850A04A0099FF89 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41805082850A04A0099FF89 /* DataClass.swift */; };
 		A418050C2850D8070099FF89 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418050B2850D8070099FF89 /* AuthenticationViewModel.swift */; };
 		A4387C1E2829097500645004 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4387C1D2829097500645004 /* UserDefaults.swift */; };
+		A465BAA82852FF7A003A5EDD /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465BAA72852FF7A003A5EDD /* NotificationManager.swift */; };
 		A470571C284F543D007A78BD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470571A284F5427007A78BD /* R.generated.swift */; };
 		A470571D284F5446007A78BD /* ReadexPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A42ADF7F284F1EA1001A3E3F /* ReadexPro-Bold.ttf */; };
 		A470571E284F5448007A78BD /* ReadexPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A42ADF81284F1EA1001A3E3F /* ReadexPro-ExtraLight.ttf */; };
@@ -31,6 +32,10 @@
 		A470572B284F7AEA007A78BD /* Dynamics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470572A284F7AEA007A78BD /* Dynamics.swift */; };
 		A47C556928214E47009508BE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C556828214E47009508BE /* SignInVC.swift */; };
 		A47C556B28214E7D009508BE /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C556A28214E7D009508BE /* SignUpVC.swift */; };
+		A480B26F2851FCCD003CEE92 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480B26E2851FCCD003CEE92 /* NotificationVC.swift */; };
+		A480B2712851FCE5003CEE92 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A480B2702851FCE5003CEE92 /* Notification.storyboard */; };
+		A480B27328520770003CEE92 /* NotificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480B27228520770003CEE92 /* NotificationCoordinator.swift */; };
+		A480B275285219AB003CEE92 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = A480B274285219AB003CEE92 /* notification.png */; };
 		A4AB1150281D04D50005A122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB114F281D04D50005A122 /* AppDelegate.swift */; };
 		A4AB1152281D04D50005A122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB1151281D04D50005A122 /* SceneDelegate.swift */; };
 		A4AB1154281D04D50005A122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB1153281D04D50005A122 /* ViewController.swift */; };
@@ -43,6 +48,7 @@
 		A4C347182822A85F005E83DD /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C347172822A85F005E83DD /* ProfileVC.swift */; };
 		A4C7F9DA282258B900779F1B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C7F9D9282258B900779F1B /* Extensions.swift */; };
 		A4C7F9E22822912F00779F1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C7F9E12822912F00779F1B /* Localizable.strings */; };
+		A4E2D1DB285376760020526B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4E2D1DA285376760020526B /* GoogleService-Info.plist */; };
 		A4FAC5912823B2BF001255E7 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FAC5902823B2BF001255E7 /* Onboarding.storyboard */; };
 		A4FAC5942823C4C9001255E7 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FAC5932823C4C9001255E7 /* OnboardingVC.swift */; };
 		A4FAC5962823CF80001255E7 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FAC5952823CF80001255E7 /* OnboardingCell.swift */; };
@@ -73,12 +79,17 @@
 		A42ADF82284F1EA1001A3E3F /* ReadexPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ReadexPro-Light.ttf"; path = "../../../../../Downloads/Readex_Pro/static/ReadexPro-Light.ttf"; sourceTree = "<group>"; };
 		A42ADF83284F1EA1001A3E3F /* ReadexPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ReadexPro-Regular.ttf"; path = "../../../../../Downloads/Readex_Pro/static/ReadexPro-Regular.ttf"; sourceTree = "<group>"; };
 		A4387C1D2829097500645004 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		A465BAA72852FF7A003A5EDD /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		A470571A284F5427007A78BD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		A4705726284F694E007A78BD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A4705728284F7906007A78BD /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		A470572A284F7AEA007A78BD /* Dynamics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamics.swift; sourceTree = "<group>"; };
 		A47C556828214E47009508BE /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		A47C556A28214E7D009508BE /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		A480B26E2851FCCD003CEE92 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		A480B2702851FCE5003CEE92 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		A480B27228520770003CEE92 /* NotificationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCoordinator.swift; sourceTree = "<group>"; };
+		A480B274285219AB003CEE92 /* notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification.png; sourceTree = "<group>"; };
 		A4AB114C281D04D50005A122 /* VerooDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerooDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AB114F281D04D50005A122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4AB1151281D04D50005A122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +105,8 @@
 		A4C347192822B396005E83DD /* ReadexPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReadexPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		A4C7F9D9282258B900779F1B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A4C7F9E12822912F00779F1B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A4E2D1DA285376760020526B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4E2D1DC28537FA30020526B /* VerooDeliveryApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VerooDeliveryApp.entitlements; sourceTree = "<group>"; };
 		A4FAC5902823B2BF001255E7 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		A4FAC5932823C4C9001255E7 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		A4FAC5952823CF80001255E7 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
@@ -125,6 +138,7 @@
 				A41238912824ECCE00828E5C /* AppCoordinator.swift */,
 				A41238932824F01500828E5C /* ProfileCoordinator.swift */,
 				A41238952824F20400828E5C /* AuthenticatorCoordinator.swift */,
+				A480B27228520770003CEE92 /* NotificationCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -170,6 +184,17 @@
 			path = BaseSetup;
 			sourceTree = "<group>";
 		};
+		A480B26D2851F60A003CEE92 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				A480B274285219AB003CEE92 /* notification.png */,
+				A480B26E2851FCCD003CEE92 /* NotificationVC.swift */,
+				A480B2702851FCE5003CEE92 /* Notification.storyboard */,
+				A465BAA72852FF7A003A5EDD /* NotificationManager.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		A4AB1143281D04D50005A122 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +218,9 @@
 		A4AB114E281D04D50005A122 /* VerooDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				A4E2D1DC28537FA30020526B /* VerooDeliveryApp.entitlements */,
+				A4E2D1DA285376760020526B /* GoogleService-Info.plist */,
+				A480B26D2851F60A003CEE92 /* Notification */,
 				A418050A2850D7F50099FF89 /* ViewModels */,
 				A4705725284F6928007A78BD /* BaseSetup */,
 				A4705724284F634F007A78BD /* Profile */,
@@ -362,9 +390,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A480B275285219AB003CEE92 /* notification.png in Resources */,
 				A4705720284F544C007A78BD /* ReadexPro-Medium.ttf in Resources */,
+				A4E2D1DB285376760020526B /* GoogleService-Info.plist in Resources */,
 				A4FAC5912823B2BF001255E7 /* Onboarding.storyboard in Resources */,
 				A470571F284F544A007A78BD /* ReadexPro-Light.ttf in Resources */,
+				A480B2712851FCE5003CEE92 /* Notification.storyboard in Resources */,
 				A4AB115C281D04D70005A122 /* LaunchScreen.storyboard in Resources */,
 				A4705722284F5451007A78BD /* ReadexPro-SemiBold.ttf in Resources */,
 				A4AB1159281D04D70005A122 /* Assets.xcassets in Resources */,
@@ -456,12 +487,14 @@
 				A4387C1E2829097500645004 /* UserDefaults.swift in Sources */,
 				A4FEAD9B282010EA00D17E4A /* Color.swift in Sources */,
 				A4AB116B281D3C8B0005A122 /* CustomView.swift in Sources */,
+				A480B26F2851FCCD003CEE92 /* NotificationVC.swift in Sources */,
 				A41238902824EB9800828E5C /* CoordinatorBoard.swift in Sources */,
 				A4FAC5982823D19D001255E7 /* OnboardingDataClass.swift in Sources */,
 				A47C556928214E47009508BE /* SignInVC.swift in Sources */,
 				A470572B284F7AEA007A78BD /* Dynamics.swift in Sources */,
 				A4FAC5942823C4C9001255E7 /* OnboardingVC.swift in Sources */,
 				A4705727284F694E007A78BD /* BaseViewController.swift in Sources */,
+				A480B27328520770003CEE92 /* NotificationCoordinator.swift in Sources */,
 				A41805092850A04A0099FF89 /* DataClass.swift in Sources */,
 				A4AB1154281D04D50005A122 /* ViewController.swift in Sources */,
 				A41238942824F01500828E5C /* ProfileCoordinator.swift in Sources */,
@@ -476,6 +509,7 @@
 				A41442CA28507C3E00E32E7A /* ViewModelFactory.swift in Sources */,
 				A4FEAD9E2820183B00D17E4A /* CustomButtons.swift in Sources */,
 				A4AB1152281D04D50005A122 /* SceneDelegate.swift in Sources */,
+				A465BAA82852FF7A003A5EDD /* NotificationManager.swift in Sources */,
 				A47C556B28214E7D009508BE /* SignUpVC.swift in Sources */,
 				A4C7F9DA282258B900779F1B /* Extensions.swift in Sources */,
 			);
@@ -625,6 +659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VerooDeliveryApp/VerooDeliveryApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -653,6 +688,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VerooDeliveryApp/VerooDeliveryApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

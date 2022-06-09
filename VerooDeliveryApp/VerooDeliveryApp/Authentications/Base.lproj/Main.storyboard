@@ -262,6 +262,10 @@ Lina</string>
                                     <userDefinedRuntimeAttribute type="string" keyPath="buttonTitle" value="Button"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="button" value="Forgot Password"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="navigateToNotification:" destination="NOQ-P8-PhB" eventType="touchUpInside" id="8Hf-wP-GTK"/>
+                                    <segue destination="dx7-bE-P6w" kind="show" id="rg6-c0-5Oj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DeE-Sr-sPX"/>
@@ -285,6 +289,16 @@ Lina</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RI7-M0-1IX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3143" y="-273"/>
+        </scene>
+        <!--Notification-->
+        <scene sceneID="e69-eg-Nmu">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="NotificationVC" storyboardName="Notification" referencedIdentifier="Notification" id="dx7-bE-P6w" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CU2-j2-DeH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIc-x4-qjs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3752" y="-238"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="E17-N0-3sp">

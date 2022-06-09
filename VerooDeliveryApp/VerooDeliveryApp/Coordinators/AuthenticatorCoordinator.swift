@@ -34,4 +34,9 @@ class AuthenticatorCoordinator: CoodinatorProtocol {
         vc.start()
     }
     
+    func navigateToNotification() {
+        let vc = NotificationCoordinator(with: navigationController ?? UINavigationController())
+        vc.start()
+    }
+    
 }

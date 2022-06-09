@@ -125,12 +125,14 @@ struct R: Rswift.Validatable {
   #endif
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 5 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
+    /// Storyboard `Notification`.
+    static let notification = _R.storyboard.notification()
     /// Storyboard `Onboarding`.
     static let onboarding = _R.storyboard.onboarding()
     /// Storyboard `ProfileScreen`.
@@ -147,6 +149,13 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Main", bundle: ...)`
     static func main(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "Notification", bundle: ...)`
+    static func notification(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.notification)
     }
     #endif
 
@@ -383,8 +392,17 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 6 files.
+  /// This `R.entitlements` struct is generated, and contains static references to 1 properties.
+  struct entitlements {
+    static let apsEnvironment = infoPlistString(path: [], key: "aps-environment") ?? "development"
+
+    fileprivate init() {}
+  }
+
+  /// This `R.file` struct is generated, and contains static references to 8 files.
   struct file {
+    /// Resource file `GoogleService-Info.plist`.
+    static let googleServiceInfoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info", pathExtension: "plist")
     /// Resource file `ReadexPro-Bold.ttf`.
     static let readexProBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "ReadexPro-Bold", pathExtension: "ttf")
     /// Resource file `ReadexPro-ExtraLight.ttf`.
@@ -397,6 +415,14 @@ struct R: Rswift.Validatable {
     static let readexProRegularTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "ReadexPro-Regular", pathExtension: "ttf")
     /// Resource file `ReadexPro-SemiBold.ttf`.
     static let readexProSemiBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "ReadexPro-SemiBold", pathExtension: "ttf")
+    /// Resource file `notification.png`.
+    static let notificationPng = Rswift.FileResource(bundle: R.hostingBundle, name: "notification", pathExtension: "png")
+
+    /// `bundle.url(forResource: "GoogleService-Info", withExtension: "plist")`
+    static func googleServiceInfoPlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.googleServiceInfoPlist
+      return fileResource.bundle.url(forResource: fileResource)
+    }
 
     /// `bundle.url(forResource: "ReadexPro-Bold", withExtension: "ttf")`
     static func readexProBoldTtf(_: Void = ()) -> Foundation.URL? {
@@ -431,6 +457,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "ReadexPro-SemiBold", withExtension: "ttf")`
     static func readexProSemiBoldTtf(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.readexProSemiBoldTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "notification", withExtension: "png")`
+    static func notificationPng(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.notificationPng
       return fileResource.bundle.url(forResource: fileResource)
     }
 
@@ -494,7 +526,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 16 images.
+  /// This `R.image` struct is generated, and contains static references to 17 images.
   struct image {
     /// Image `BackArrow`.
     static let backArrow = Rswift.ImageResource(bundle: R.hostingBundle, name: "BackArrow")
@@ -526,6 +558,8 @@ struct R: Rswift.Validatable {
     static let eyeIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "eyeIcon")
     /// Image `googleIcon`.
     static let googleIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "googleIcon")
+    /// Image `notification`.
+    static let notification = Rswift.ImageResource(bundle: R.hostingBundle, name: "notification")
     /// Image `profileImage`.
     static let profileImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "profileImage")
 
@@ -635,6 +669,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "notification", bundle: ..., traitCollection: ...)`
+    static func notification(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.notification, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "profileImage", bundle: ..., traitCollection: ...)`
     static func profileImage(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.profileImage, compatibleWith: traitCollection)
@@ -687,10 +728,12 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 17 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 22 localization keys.
     struct localizable {
       /// Value: A holiday classic, our Peppermint Mocha infuses hand-pulled espresso with rich chocolate sauce, sweet peppermint, topped with a cloud of whipped cream.
       static let subtitleOne = Rswift.StringResource(key: "SubtitleOne", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Accept
+      static let actionOne = Rswift.StringResource(key: "ActionOne", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Addresses
       static let address = Rswift.StringResource(key: "Address", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Button Clicked
@@ -701,12 +744,18 @@ struct R: Rswift.Validatable {
       static let signUpButtonTitle = Rswift.StringResource(key: "signUpButtonTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Contact Us
       static let contact = Rswift.StringResource(key: "Contact", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Decline
+      static let actionTwo = Rswift.StringResource(key: "ActionTwo", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Favourite Products
       static let favourites = Rswift.StringResource(key: "Favourites", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Hello
       static let appName = Rswift.StringResource(key: "appName", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Its lunch time at the park, please join us for a dinosaur feeding
+      static let body = Rswift.StringResource(key: "body", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Main
       static let main = Rswift.StringResource(key: "Main", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: My Notification
+      static let title = Rswift.StringResource(key: "title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: My profile
       static let myProfile = Rswift.StringResource(key: "MyProfile", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Onboarding
@@ -723,6 +772,8 @@ struct R: Rswift.Validatable {
       static let profile = Rswift.StringResource(key: "Profile", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Sign In
       static let signInButtonTitle = Rswift.StringResource(key: "signInButtonTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Veroo Delivery App
+      static let subtitle = Rswift.StringResource(key: "subtitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
 
       /// Value: A holiday classic, our Peppermint Mocha infuses hand-pulled espresso with rich chocolate sauce, sweet peppermint, topped with a cloud of whipped cream.
       static func subtitleOne(preferredLanguages: [String]? = nil) -> String {
@@ -735,6 +786,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("SubtitleOne", bundle: bundle, comment: "")
+      }
+
+      /// Value: Accept
+      static func actionOne(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("ActionOne", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "ActionOne"
+        }
+
+        return NSLocalizedString("ActionOne", bundle: bundle, comment: "")
       }
 
       /// Value: Addresses
@@ -802,6 +866,19 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("Contact", bundle: bundle, comment: "")
       }
 
+      /// Value: Decline
+      static func actionTwo(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("ActionTwo", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "ActionTwo"
+        }
+
+        return NSLocalizedString("ActionTwo", bundle: bundle, comment: "")
+      }
+
       /// Value: Favourite Products
       static func favourites(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
@@ -828,6 +905,19 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("appName", bundle: bundle, comment: "")
       }
 
+      /// Value: Its lunch time at the park, please join us for a dinosaur feeding
+      static func body(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("body", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "body"
+        }
+
+        return NSLocalizedString("body", bundle: bundle, comment: "")
+      }
+
       /// Value: Main
       static func main(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
@@ -839,6 +929,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("Main", bundle: bundle, comment: "")
+      }
+
+      /// Value: My Notification
+      static func title(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("title", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "title"
+        }
+
+        return NSLocalizedString("title", bundle: bundle, comment: "")
       }
 
       /// Value: My profile
@@ -945,6 +1048,19 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("signInButtonTitle", bundle: bundle, comment: "")
       }
 
+      /// Value: Veroo Delivery App
+      static func subtitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("subtitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "subtitle"
+        }
+
+        return NSLocalizedString("subtitle", bundle: bundle, comment: "")
+      }
+
       fileprivate init() {}
     }
 
@@ -979,6 +1095,9 @@ struct _R: Rswift.Validatable {
       #endif
       #if os(iOS) || os(tvOS)
       try main.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try notification.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try onboarding.validate()
@@ -1025,6 +1144,26 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "PlaceHolderColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'PlaceHolderColor' is used in storyboard 'Main', but couldn't be loaded.") }
         }
         if _R.storyboard.main().viewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'viewController' could not be loaded from storyboard 'Main' as 'ViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct notification: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "Notification"
+      let notification = StoryboardViewControllerResource<NotificationVC>(identifier: "Notification")
+
+      func notification(_: Void = ()) -> NotificationVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: notification)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.notification().notification() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'notification' could not be loaded from storyboard 'Notification' as 'NotificationVC'.") }
       }
 
       fileprivate init() {}

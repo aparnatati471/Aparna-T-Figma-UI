@@ -29,3 +29,10 @@
 "Main"                  = "Main";
 "Profile"               = "ProfileScreen";
 "Onboard"               = "Onboarding";
+
+// Notification Strings
+"title"                 = "My Notification";
+"subtitle"              = "Veroo Delivery App";
+"body"                  = "Its lunch time at the park, please join us for a dinosaur feeding";
+"ActionOne"             = "Accept";
+"ActionTwo"             = "Decline";
