@@ -36,3 +36,20 @@
 "body"                  = "Its lunch time at the park, please join us for a dinosaur feeding";
 "ActionOne"             = "Accept";
 "ActionTwo"             = "Decline";
+
+// Core Data Strings
+"tvTitle"               = "To Do List";
+"addItemTitle"          = "Add Item";
+"addItemMessage"        = "Enter New Item";
+"addAction"             = "Add";
+"sheetTitle"            = "Manipulation";
+"cancelTitle"           = "Cancel";
+"editTitle"             = "Edit";
+"deleteTitle"           = "Delete";
+"editActionTitle"       = "Edit Item";
+"editActionMessage"     = "Edit Your Item";
+"editButtonTitle"       = "Save";
+
+
+
+

@@ -2,6 +2,36 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:VerooDeliveryApp/CDEmployee+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VerooDeliveryApp/CDEmployee+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VerooDeliveryApp/CoreData/Relationships/User+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VerooDeliveryApp/CoreData/Relationships/User+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VerooDeliveryApp/CoreData/Relationships/Passport+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VerooDeliveryApp/CoreData/Relationships/Passport+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VerooDeliveryApp/CoreData/Relationships/Task+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VerooDeliveryApp/CoreData/Relationships/Task+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VerooDeliveryApp/CoreData/Notes+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VerooDeliveryApp/CoreData/Notes+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:VerooDeliveryApp.xcodeproj">
    </FileRef>
    <FileRef

@@ -39,4 +39,9 @@ class AuthenticatorCoordinator: CoodinatorProtocol {
         vc.start()
     }
     
+    func navigateToUsersTasks() {
+        let vc = UsersTasksCoordinator(with: navigationController ?? UINavigationController())
+        vc.start()
+    }
+    
 }

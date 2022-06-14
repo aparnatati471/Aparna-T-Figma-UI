@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="STo-C9-Kgw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NotesVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="NotesVC" id="Y6W-OH-hqX" customClass="NotesVC" customModule="VerooDeliveryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esV-JZ-gJy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ldq-Th-uFv">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <color key="backgroundColor" name="MainViewBackgroundColor"/>
+                                        <color key="separatorColor" name="LabelTextColor"/>
+                                        <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="notesCell" rowHeight="98" id="qad-8y-MJX" customClass="NotesCell" customModule="VerooDeliveryApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.5" width="414" height="98"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qad-8y-MJX" id="Eft-97-DNU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="qE8-5g-h9j">
+                                                            <rect key="frame" x="20" y="19" width="41.5" height="60"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpL-ty-eY4">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" name="LabelTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akK-7L-96q">
+                                                                    <rect key="frame" x="0.0" y="39.5" width="41.5" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" name="LabelTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="MainViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qE8-5g-h9j" firstAttribute="leading" secondItem="Eft-97-DNU" secondAttribute="leading" constant="20" symbolic="YES" id="3kc-w9-ZVt"/>
+                                                        <constraint firstItem="qE8-5g-h9j" firstAttribute="centerY" secondItem="Eft-97-DNU" secondAttribute="centerY" id="R9x-fC-HHR"/>
+                                                        <constraint firstItem="qE8-5g-h9j" firstAttribute="height" secondItem="Eft-97-DNU" secondAttribute="height" multiplier="0.612245" id="vkW-PM-Mqu"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" name="MainViewBackgroundColor"/>
+                                                <connections>
+                                                    <outlet property="createdAt" destination="akK-7L-96q" id="grx-D8-pNT"/>
+                                                    <outlet property="name" destination="fpL-ty-eY4" id="nB0-Fw-O7c"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="sOR-Xe-0oN"/>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="rpn-Rm-2qC"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" name="MainViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ldq-Th-uFv" firstAttribute="leading" secondItem="esV-JZ-gJy" secondAttribute="leading" id="7FA-aG-1V6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ldq-Th-uFv" secondAttribute="trailing" id="Get-kY-TlV"/>
+                                    <constraint firstItem="Ldq-Th-uFv" firstAttribute="top" secondItem="esV-JZ-gJy" secondAttribute="top" id="QOL-Pp-qSE"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ldq-Th-uFv" secondAttribute="bottom" id="YCU-H8-yln"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="MainViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="esV-JZ-gJy" secondAttribute="trailing" id="N2A-to-EJf"/>
+                            <constraint firstItem="esV-JZ-gJy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qp4-VV-8ne"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="esV-JZ-gJy" secondAttribute="bottom" id="gY2-PU-Vx6"/>
+                            <constraint firstItem="esV-JZ-gJy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="lx5-JX-c5N"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="akG-fC-qgK"/>
+                    <connections>
+                        <outlet property="tblNotes" destination="Ldq-Th-uFv" id="ptZ-h4-cta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997.10144927536237" y="24.776785714285712"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="skt-Q3-4wK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="STo-C9-Kgw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="WIE-gC-IWl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="LabelTextColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="gov-OL-MeW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDe-va-fUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="24.776785714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="LabelTextColor">
+            <color red="0.87058823529411766" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainViewBackgroundColor">
+            <color red="0.12156862745098039" green="0.11372549019607843" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

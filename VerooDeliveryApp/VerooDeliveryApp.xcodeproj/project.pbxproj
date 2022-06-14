@@ -18,6 +18,11 @@
 		A41442CC285081B400E32E7A /* GenericClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41442CB285081B400E32E7A /* GenericClass.swift */; };
 		A41805092850A04A0099FF89 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41805082850A04A0099FF89 /* DataClass.swift */; };
 		A418050C2850D8070099FF89 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418050B2850D8070099FF89 /* AuthenticationViewModel.swift */; };
+		A4379C8228599F2C0071A8A7 /* NotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379C8128599F2C0071A8A7 /* NotesCell.swift */; };
+		A4379C862859D19A0071A8A7 /* NotesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379C852859D19A0071A8A7 /* NotesCoordinator.swift */; };
+		A4379C98285A08E80071A8A7 /* UserTasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4379C97285A08E80071A8A7 /* UserTasks.storyboard */; };
+		A4379C9C285A0AEB0071A8A7 /* UsersTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379C9B285A0AEB0071A8A7 /* UsersTaskVC.swift */; };
+		A4379C9E285A10C80071A8A7 /* UsersTasksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379C9D285A10C80071A8A7 /* UsersTasksCoordinator.swift */; };
 		A4387C1E2829097500645004 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4387C1D2829097500645004 /* UserDefaults.swift */; };
 		A465BAA82852FF7A003A5EDD /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465BAA72852FF7A003A5EDD /* NotificationManager.swift */; };
 		A470571C284F543D007A78BD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470571A284F5427007A78BD /* R.generated.swift */; };
@@ -44,6 +49,9 @@
 		A4AB115C281D04D70005A122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AB115A281D04D70005A122 /* LaunchScreen.storyboard */; };
 		A4AB1169281D2AE30005A122 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB1168281D2AE30005A122 /* CustomTextField.swift */; };
 		A4AB116B281D3C8B0005A122 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB116A281D3C8B0005A122 /* CustomView.swift */; };
+		A4BDE0BC285887E600AD20FA /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4BDE0BA285887E600AD20FA /* NoteModel.xcdatamodeld */; };
+		A4BDE0BE285889C100AD20FA /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BDE0BD285889C100AD20FA /* Notes.storyboard */; };
+		A4BDE0C0285889CC00AD20FA /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BDE0BF285889CC00AD20FA /* NotesVC.swift */; };
 		A4C347162822A694005E83DD /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C347152822A694005E83DD /* ProfileScreen.storyboard */; };
 		A4C347182822A85F005E83DD /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C347172822A85F005E83DD /* ProfileVC.swift */; };
 		A4C7F9DA282258B900779F1B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C7F9D9282258B900779F1B /* Extensions.swift */; };
@@ -78,6 +86,11 @@
 		A42ADF81284F1EA1001A3E3F /* ReadexPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ReadexPro-ExtraLight.ttf"; path = "../../../../../Downloads/Readex_Pro/static/ReadexPro-ExtraLight.ttf"; sourceTree = "<group>"; };
 		A42ADF82284F1EA1001A3E3F /* ReadexPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ReadexPro-Light.ttf"; path = "../../../../../Downloads/Readex_Pro/static/ReadexPro-Light.ttf"; sourceTree = "<group>"; };
 		A42ADF83284F1EA1001A3E3F /* ReadexPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ReadexPro-Regular.ttf"; path = "../../../../../Downloads/Readex_Pro/static/ReadexPro-Regular.ttf"; sourceTree = "<group>"; };
+		A4379C8128599F2C0071A8A7 /* NotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCell.swift; sourceTree = "<group>"; };
+		A4379C852859D19A0071A8A7 /* NotesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCoordinator.swift; sourceTree = "<group>"; };
+		A4379C97285A08E80071A8A7 /* UserTasks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTasks.storyboard; sourceTree = "<group>"; };
+		A4379C9B285A0AEB0071A8A7 /* UsersTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTaskVC.swift; sourceTree = "<group>"; };
+		A4379C9D285A10C80071A8A7 /* UsersTasksCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTasksCoordinator.swift; sourceTree = "<group>"; };
 		A4387C1D2829097500645004 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		A465BAA72852FF7A003A5EDD /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		A470571A284F5427007A78BD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
@@ -100,6 +113,9 @@
 		A4AB115D281D04D70005A122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4AB1168281D2AE30005A122 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A4AB116A281D3C8B0005A122 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		A4BDE0BB285887E600AD20FA /* NoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteModel.xcdatamodel; sourceTree = "<group>"; };
+		A4BDE0BD285889C100AD20FA /* Notes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
+		A4BDE0BF285889CC00AD20FA /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
 		A4C347152822A694005E83DD /* ProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
 		A4C347172822A85F005E83DD /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		A4C347192822B396005E83DD /* ReadexPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReadexPro-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -131,6 +147,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A40E5F0A285884F10081DE7C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A4379C872859F6E80071A8A7 /* Relationships */,
+				A4BDE0BA285887E600AD20FA /* NoteModel.xcdatamodeld */,
+				A4BDE0BF285889CC00AD20FA /* NotesVC.swift */,
+				A4BDE0BD285889C100AD20FA /* Notes.storyboard */,
+				A4379C8128599F2C0071A8A7 /* NotesCell.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		A412388E2824EB7E00828E5C /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +167,8 @@
 				A41238932824F01500828E5C /* ProfileCoordinator.swift */,
 				A41238952824F20400828E5C /* AuthenticatorCoordinator.swift */,
 				A480B27228520770003CEE92 /* NotificationCoordinator.swift */,
+				A4379C852859D19A0071A8A7 /* NotesCoordinator.swift */,
+				A4379C9D285A10C80071A8A7 /* UsersTasksCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -149,6 +179,15 @@
 				A418050B2850D8070099FF89 /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A4379C872859F6E80071A8A7 /* Relationships */ = {
+			isa = PBXGroup;
+			children = (
+				A4379C97285A08E80071A8A7 /* UserTasks.storyboard */,
+				A4379C9B285A0AEB0071A8A7 /* UsersTaskVC.swift */,
+			);
+			path = Relationships;
 			sourceTree = "<group>";
 		};
 		A4705723284F62C0007A78BD /* Authentications */ = {
@@ -220,6 +259,7 @@
 			children = (
 				A4E2D1DC28537FA30020526B /* VerooDeliveryApp.entitlements */,
 				A4E2D1DA285376760020526B /* GoogleService-Info.plist */,
+				A40E5F0A285884F10081DE7C /* CoreData */,
 				A480B26D2851F60A003CEE92 /* Notification */,
 				A418050A2850D7F50099FF89 /* ViewModels */,
 				A4705725284F6928007A78BD /* BaseSetup */,
@@ -390,11 +430,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BDE0BE285889C100AD20FA /* Notes.storyboard in Resources */,
 				A480B275285219AB003CEE92 /* notification.png in Resources */,
 				A4705720284F544C007A78BD /* ReadexPro-Medium.ttf in Resources */,
 				A4E2D1DB285376760020526B /* GoogleService-Info.plist in Resources */,
 				A4FAC5912823B2BF001255E7 /* Onboarding.storyboard in Resources */,
 				A470571F284F544A007A78BD /* ReadexPro-Light.ttf in Resources */,
+				A4379C98285A08E80071A8A7 /* UserTasks.storyboard in Resources */,
 				A480B2712851FCE5003CEE92 /* Notification.storyboard in Resources */,
 				A4AB115C281D04D70005A122 /* LaunchScreen.storyboard in Resources */,
 				A4705722284F5451007A78BD /* ReadexPro-SemiBold.ttf in Resources */,
@@ -482,7 +524,10 @@
 				A470571C284F543D007A78BD /* R.generated.swift in Sources */,
 				A4FAC5962823CF80001255E7 /* OnboardingCell.swift in Sources */,
 				A412AB822822D21E009348F3 /* ProfileDataClass.swift in Sources */,
+				A4BDE0BC285887E600AD20FA /* NoteModel.xcdatamodeld in Sources */,
 				A4705729284F7906007A78BD /* BaseViewModel.swift in Sources */,
+				A4379C862859D19A0071A8A7 /* NotesCoordinator.swift in Sources */,
+				A4379C9E285A10C80071A8A7 /* UsersTasksCoordinator.swift in Sources */,
 				A4C347182822A85F005E83DD /* ProfileVC.swift in Sources */,
 				A4387C1E2829097500645004 /* UserDefaults.swift in Sources */,
 				A4FEAD9B282010EA00D17E4A /* Color.swift in Sources */,
@@ -491,9 +536,12 @@
 				A41238902824EB9800828E5C /* CoordinatorBoard.swift in Sources */,
 				A4FAC5982823D19D001255E7 /* OnboardingDataClass.swift in Sources */,
 				A47C556928214E47009508BE /* SignInVC.swift in Sources */,
+				A4379C9C285A0AEB0071A8A7 /* UsersTaskVC.swift in Sources */,
 				A470572B284F7AEA007A78BD /* Dynamics.swift in Sources */,
 				A4FAC5942823C4C9001255E7 /* OnboardingVC.swift in Sources */,
+				A4379C8228599F2C0071A8A7 /* NotesCell.swift in Sources */,
 				A4705727284F694E007A78BD /* BaseViewController.swift in Sources */,
+				A4BDE0C0285889CC00AD20FA /* NotesVC.swift in Sources */,
 				A480B27328520770003CEE92 /* NotificationCoordinator.swift in Sources */,
 				A41805092850A04A0099FF89 /* DataClass.swift in Sources */,
 				A4AB1154281D04D50005A122 /* ViewController.swift in Sources */,
@@ -733,6 +781,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A4BDE0BA285887E600AD20FA /* NoteModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A4BDE0BB285887E600AD20FA /* NoteModel.xcdatamodel */,
+			);
+			currentVersion = A4BDE0BB285887E600AD20FA /* NoteModel.xcdatamodel */;
+			path = NoteModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A4AB1144281D04D50005A122 /* Project object */;
 }

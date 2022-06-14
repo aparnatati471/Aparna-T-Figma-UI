@@ -12,6 +12,9 @@ enum StoryBoards: String {
     case main = "Main"
     case profile = "ProfileScreen"
     case onboarding  = "Onboarding"
+    case notification = "Notification"
+    case notes = "Notes"
+    case tasksUser = "UserTasks"
 }
 
 

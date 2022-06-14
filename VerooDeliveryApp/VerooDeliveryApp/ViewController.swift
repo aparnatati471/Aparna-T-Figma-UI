@@ -54,6 +54,10 @@ class ViewController: BaseViewController<AuthenticatorCoordinator, BaseViewModel
         drawBottomLine(btnSignIn)
     }
     
+    @IBAction func tasksClicked(_ sender: UIButton) {
+        coordinator?.navigateToUsersTasks()
+    }
+    
     func getObservables() {
         vm.authenticationToken.bind { token in
             self.showAlert(title: "Success", message: "Now You can access \(String(describing: token))")

@@ -12,6 +12,7 @@ class SignInVC: BaseViewController<AuthenticatorCoordinator, BaseViewModel> {
         tfEmail.delegate = self
         tfPassword.delegate = self
         hideKeyboardWhenTappedAround()
+        coordinator = AuthenticatorCoordinator(with: navigationController ?? UINavigationController())
     }
     
     @IBAction func navigateToNotification(_ sender: CustomButtonTwo) {

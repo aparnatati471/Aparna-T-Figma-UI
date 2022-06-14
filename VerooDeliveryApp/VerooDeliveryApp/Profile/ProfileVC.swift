@@ -14,6 +14,10 @@ class ProfileVC: BaseViewController<ProfileCoordinator, BaseViewModel> {
         profileTableView.dataSource = self
     }
     
+    @IBAction func navigateToNotes(_ sender: Any) {
+        coordinator?.navigateToNotes()
+    }
+    
     func setUpView() {
         self.view.backgroundColor = UIColor.viewBackgroundColor
         headerView.backgroundColor = R.color.headerColor()

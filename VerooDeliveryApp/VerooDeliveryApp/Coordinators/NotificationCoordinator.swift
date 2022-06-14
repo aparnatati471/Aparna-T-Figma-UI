@@ -17,7 +17,8 @@ class NotificationCoordinator: CoodinatorProtocol {
     }
     
     func start() {
-        let vc = SignInVC.instantiateFromStoryBoard(from: StoryBoards.main)
+        let vc = NotificationVC.instantiateFromStoryBoard(from: StoryBoards.notification)
+        vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
     }
     

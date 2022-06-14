@@ -8,7 +8,7 @@
 import UIKit
 import UserNotifications
 
-class NotificationVC: UIViewController {
+class NotificationVC: BaseViewController<NotificationCoordinator, BaseViewModel> {
 
     var notification = NotificationManager(title: R.string.localizable.title(), subtitle: R.string.localizable.subtitle(), body: R.string.localizable.body())
     

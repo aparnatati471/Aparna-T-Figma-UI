@@ -1,15 +1,15 @@
 //
-//  ProfileCoordinator.swift
+//  UsersTasksCoordinator.swift
 //  VerooDeliveryApp
 //
-//  Created by Aparna Tati on 06/05/22.
+//  Created by Aparna Tati on 15/06/22.
 //
 
+import Foundation
 import UIKit
 
-class ProfileCoordinator: CoodinatorProtocol {
+class UsersTasksCoordinator: CoodinatorProtocol {
     
-    // Variable
     var navigationController: UINavigationController?
     
     // Initializer
@@ -17,9 +17,8 @@ class ProfileCoordinator: CoodinatorProtocol {
         self.navigationController = _navigationController
     }
     
-    // Class Methods
     func start() {
-        let vc = ProfileVC.instantiateFromStoryBoard(from: StoryBoards.profile)
+        let vc = UsersTaskVC.instantiateFromStoryBoard(from: StoryBoards.tasksUser)
         vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -27,10 +26,5 @@ class ProfileCoordinator: CoodinatorProtocol {
     func finish() {
         navigationController?.popViewController(animated: true)
     }
-    
-    func navigateToNotes() {
-        let vc = NotesCoordinator(with: navigationController ?? UINavigationController())
-        vc.start()
-    }
-    
+
 }
