@@ -91,6 +91,9 @@
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" image="appleIcon"/>
+                                                                        <connections>
+                                                                            <action selector="employeeClicked:" destination="jAG-nj-6Sy" eventType="touchUpInside" id="kV7-lr-ein"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wb-nZ-0uB">
                                                                         <rect key="frame" x="74" y="0.0" width="61.333333333333343" height="64"/>

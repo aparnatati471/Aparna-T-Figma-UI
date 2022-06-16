@@ -44,4 +44,9 @@ class AuthenticatorCoordinator: CoodinatorProtocol {
         vc.start()
     }
     
+    func navigateToCoreData() {
+        let vc = CoreDataCoordinator(with: navigationController ?? UINavigationController())
+        vc.start()
+    }
+    
 }

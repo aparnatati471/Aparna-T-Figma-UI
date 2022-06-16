@@ -125,8 +125,10 @@ struct R: Rswift.Validatable {
   #endif
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 8 storyboards.
   struct storyboard {
+    /// Storyboard `CoreData`.
+    static let coreData = _R.storyboard.coreData()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
@@ -141,6 +143,13 @@ struct R: Rswift.Validatable {
     static let profileScreen = _R.storyboard.profileScreen()
     /// Storyboard `UserTasks`.
     static let userTasks = _R.storyboard.userTasks()
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "CoreData", bundle: ...)`
+    static func coreData(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.coreData)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
@@ -734,10 +743,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 4 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `ProfileCell`.
     static let profileCell: Rswift.ReuseIdentifier<ProfileCell> = Rswift.ReuseIdentifier(identifier: "ProfileCell")
+    /// Reuse identifier `employeeCell`.
+    static let employeeCell: Rswift.ReuseIdentifier<ShowDataCell> = Rswift.ReuseIdentifier(identifier: "employeeCell")
     /// Reuse identifier `notesCell`.
     static let notesCell: Rswift.ReuseIdentifier<NotesCell> = Rswift.ReuseIdentifier(identifier: "notesCell")
     /// Reuse identifier `onboardingCell`.
@@ -748,7 +759,7 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 33 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 41 localization keys.
     struct localizable {
       /// Value: A holiday classic, our Peppermint Mocha infuses hand-pulled espresso with rich chocolate sauce, sweet peppermint, topped with a cloud of whipped cream.
       static let subtitleOne = Rswift.StringResource(key: "SubtitleOne", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
@@ -774,14 +785,28 @@ struct R: Rswift.Validatable {
       static let actionTwo = Rswift.StringResource(key: "ActionTwo", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Delete
       static let deleteTitle = Rswift.StringResource(key: "deleteTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Delete Employee
+      static let deleteAlertTitle = Rswift.StringResource(key: "deleteAlertTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Done
+      static let done = Rswift.StringResource(key: "done", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Edit
       static let editTitle = Rswift.StringResource(key: "editTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Edit Item
       static let editActionTitle = Rswift.StringResource(key: "editActionTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Edit Your Item
       static let editActionMessage = Rswift.StringResource(key: "editActionMessage", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Employee Deleted Successfully!!
+      static let deleteAlertMsg = Rswift.StringResource(key: "deleteAlertMsg", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Employee List
+      static let employeeTitle = Rswift.StringResource(key: "employeeTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Employee Updated Successfully!!
+      static let updateAlertMsg = Rswift.StringResource(key: "updateAlertMsg", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Enter New Item
       static let addItemMessage = Rswift.StringResource(key: "addItemMessage", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Error in deleting employee!!
+      static let deleteAlertFailMsg = Rswift.StringResource(key: "deleteAlertFailMsg", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Error in updating employee!!
+      static let updateAlertFailMsg = Rswift.StringResource(key: "updateAlertFailMsg", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Favourite Products
       static let favourites = Rswift.StringResource(key: "Favourites", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Hello
@@ -814,6 +839,8 @@ struct R: Rswift.Validatable {
       static let signInButtonTitle = Rswift.StringResource(key: "signInButtonTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: To Do List
       static let tvTitle = Rswift.StringResource(key: "tvTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Update Employee
+      static let updateAlertTitle = Rswift.StringResource(key: "updateAlertTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Veroo Delivery App
       static let subtitle = Rswift.StringResource(key: "subtitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
 
@@ -973,6 +1000,32 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("deleteTitle", bundle: bundle, comment: "")
       }
 
+      /// Value: Delete Employee
+      static func deleteAlertTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("deleteAlertTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "deleteAlertTitle"
+        }
+
+        return NSLocalizedString("deleteAlertTitle", bundle: bundle, comment: "")
+      }
+
+      /// Value: Done
+      static func done(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("done", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "done"
+        }
+
+        return NSLocalizedString("done", bundle: bundle, comment: "")
+      }
+
       /// Value: Edit
       static func editTitle(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
@@ -1012,6 +1065,45 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("editActionMessage", bundle: bundle, comment: "")
       }
 
+      /// Value: Employee Deleted Successfully!!
+      static func deleteAlertMsg(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("deleteAlertMsg", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "deleteAlertMsg"
+        }
+
+        return NSLocalizedString("deleteAlertMsg", bundle: bundle, comment: "")
+      }
+
+      /// Value: Employee List
+      static func employeeTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("employeeTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "employeeTitle"
+        }
+
+        return NSLocalizedString("employeeTitle", bundle: bundle, comment: "")
+      }
+
+      /// Value: Employee Updated Successfully!!
+      static func updateAlertMsg(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("updateAlertMsg", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "updateAlertMsg"
+        }
+
+        return NSLocalizedString("updateAlertMsg", bundle: bundle, comment: "")
+      }
+
       /// Value: Enter New Item
       static func addItemMessage(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
@@ -1023,6 +1115,32 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("addItemMessage", bundle: bundle, comment: "")
+      }
+
+      /// Value: Error in deleting employee!!
+      static func deleteAlertFailMsg(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("deleteAlertFailMsg", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "deleteAlertFailMsg"
+        }
+
+        return NSLocalizedString("deleteAlertFailMsg", bundle: bundle, comment: "")
+      }
+
+      /// Value: Error in updating employee!!
+      static func updateAlertFailMsg(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("updateAlertFailMsg", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "updateAlertFailMsg"
+        }
+
+        return NSLocalizedString("updateAlertFailMsg", bundle: bundle, comment: "")
       }
 
       /// Value: Favourite Products
@@ -1233,6 +1351,19 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("tvTitle", bundle: bundle, comment: "")
       }
 
+      /// Value: Update Employee
+      static func updateAlertTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("updateAlertTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "updateAlertTitle"
+        }
+
+        return NSLocalizedString("updateAlertTitle", bundle: bundle, comment: "")
+      }
+
       /// Value: Veroo Delivery App
       static func subtitle(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
@@ -1276,6 +1407,9 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       #if os(iOS) || os(tvOS)
+      try coreData.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try launchScreen.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -1297,6 +1431,42 @@ struct _R: Rswift.Validatable {
       try userTasks.validate()
       #endif
     }
+
+    #if os(iOS) || os(tvOS)
+    struct coreData: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let coreDataVC = StoryboardViewControllerResource<CoreDataVC>(identifier: "CoreDataVC")
+      let name = "CoreData"
+      let showDataVC = StoryboardViewControllerResource<ShowDataVC>(identifier: "ShowDataVC")
+      let updateDeleteVC = StoryboardViewControllerResource<UpdateDeleteVC>(identifier: "UpdateDeleteVC")
+
+      func coreDataVC(_: Void = ()) -> CoreDataVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: coreDataVC)
+      }
+
+      func showDataVC(_: Void = ()) -> ShowDataVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: showDataVC)
+      }
+
+      func updateDeleteVC(_: Void = ()) -> UpdateDeleteVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: updateDeleteVC)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "HeaderColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'HeaderColor' is used in storyboard 'CoreData', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "LabelTextColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'LabelTextColor' is used in storyboard 'CoreData', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "MainViewBackgroundColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'MainViewBackgroundColor' is used in storyboard 'CoreData', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "PlaceHolderColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'PlaceHolderColor' is used in storyboard 'CoreData', but couldn't be loaded.") }
+        }
+        if _R.storyboard.coreData().coreDataVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'coreDataVC' could not be loaded from storyboard 'CoreData' as 'CoreDataVC'.") }
+        if _R.storyboard.coreData().showDataVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'showDataVC' could not be loaded from storyboard 'CoreData' as 'ShowDataVC'.") }
+        if _R.storyboard.coreData().updateDeleteVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'updateDeleteVC' could not be loaded from storyboard 'CoreData' as 'UpdateDeleteVC'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {

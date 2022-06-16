@@ -58,6 +58,10 @@ class ViewController: BaseViewController<AuthenticatorCoordinator, BaseViewModel
         coordinator?.navigateToUsersTasks()
     }
     
+    @IBAction func employeeClicked(_ sender: UIButton) {
+        coordinator?.navigateToCoreData()
+    }
+    
     func getObservables() {
         vm.authenticationToken.bind { token in
             self.showAlert(title: "Success", message: "Now You can access \(String(describing: token))")

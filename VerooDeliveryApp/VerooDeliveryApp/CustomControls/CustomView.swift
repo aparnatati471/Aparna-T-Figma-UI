@@ -12,6 +12,6 @@ class CustomView: UIView {
         super.init(coder: coder)
         self.layer.backgroundColor = UIColor.viewBackgroundColor.cgColor
     }
-
+    
 }
 

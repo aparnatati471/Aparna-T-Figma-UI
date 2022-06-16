@@ -49,7 +49,14 @@
 "editActionTitle"       = "Edit Item";
 "editActionMessage"     = "Edit Your Item";
 "editButtonTitle"       = "Save";
-
+"employeeTitle"         = "Employee List";
+"updateAlertTitle"      = "Update Employee";
+"deleteAlertTitle"      = "Delete Employee";
+"updateAlertMsg"        = "Employee Updated Successfully!!";
+"deleteAlertMsg"        = "Employee Deleted Successfully!!";
+"updateAlertFailMsg"    = "Error in updating employee!!";
+"deleteAlertFailMsg"    = "Error in deleting employee!!";
+"done"                  = "Done";
 
 
 

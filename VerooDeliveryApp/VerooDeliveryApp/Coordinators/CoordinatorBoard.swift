@@ -15,6 +15,7 @@ enum StoryBoards: String {
     case notification = "Notification"
     case notes = "Notes"
     case tasksUser = "UserTasks"
+    case coreData = "CoreData"
 }
 
 
