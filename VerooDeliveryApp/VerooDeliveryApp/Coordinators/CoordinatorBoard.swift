@@ -16,6 +16,7 @@ enum StoryBoards: String {
     case notes = "Notes"
     case tasksUser = "UserTasks"
     case coreData = "CoreData"
+    case employeePassport = "EmployeePassport"
 }
 
 

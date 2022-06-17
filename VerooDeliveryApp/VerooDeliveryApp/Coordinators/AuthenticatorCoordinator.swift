@@ -40,8 +40,8 @@ class AuthenticatorCoordinator: CoodinatorProtocol {
     }
     
     func navigateToUsersTasks() {
-        let vc = UsersTasksCoordinator(with: navigationController ?? UINavigationController())
-        vc.start()
+       // let vc = EmployeePassportCoordinator(with: navigationController ?? UINavigationController())
+       // vc.start()
     }
     
     func navigateToCoreData() {

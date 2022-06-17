@@ -36,6 +36,14 @@
 		A4379CBE285B5E080071A8A7 /* ShowsDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379CBD285B5E080071A8A7 /* ShowsDataCoordinator.swift */; };
 		A4379CC0285C45F90071A8A7 /* ShowDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379CBF285C45F90071A8A7 /* ShowDetailsCoordinator.swift */; };
 		A4379CC2285C464B0071A8A7 /* UpdateDeleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379CC1285C464B0071A8A7 /* UpdateDeleteVC.swift */; };
+		A4379CC6285CA5F70071A8A7 /* Passports.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379CC5285CA5F70071A8A7 /* Passports.swift */; };
+		A4379CD0285CA8130071A8A7 /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379CCF285CA8130071A8A7 /* Employees.swift */; };
+		A4379CD3285CA8D20071A8A7 /* PassportDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379CD2285CA8D20071A8A7 /* PassportDataRepository.swift */; };
+		A4379CD5285CA9BB0071A8A7 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379CD4285CA9BB0071A8A7 /* BaseRepository.swift */; };
+		A4379CD7285CAB270071A8A7 /* EmployeesDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379CD6285CAB270071A8A7 /* EmployeesDataRepository.swift */; };
+		A4379CDA285CADED0071A8A7 /* CDEmployeeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379CD9285CADED0071A8A7 /* CDEmployeeExtension.swift */; };
+		A4379CDC285CAE850071A8A7 /* CDPassportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4379CDB285CAE850071A8A7 /* CDPassportExtension.swift */; };
+		A4379CDE285CB4CA0071A8A7 /* EmployeePassport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4379CDD285CB4CA0071A8A7 /* EmployeePassport.storyboard */; };
 		A4387C1E2829097500645004 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4387C1D2829097500645004 /* UserDefaults.swift */; };
 		A465BAA82852FF7A003A5EDD /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465BAA72852FF7A003A5EDD /* NotificationManager.swift */; };
 		A470571C284F543D007A78BD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470571A284F5427007A78BD /* R.generated.swift */; };
@@ -70,6 +78,21 @@
 		A4C7F9DA282258B900779F1B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C7F9D9282258B900779F1B /* Extensions.swift */; };
 		A4C7F9E22822912F00779F1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C7F9E12822912F00779F1B /* Localizable.strings */; };
 		A4E2D1DB285376760020526B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4E2D1DA285376760020526B /* GoogleService-Info.plist */; };
+		A4EF125A28618F7800CF33FB /* CreateEmployeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF125928618F7800CF33FB /* CreateEmployeeVC.swift */; };
+		A4EF125C28618F8F00CF33FB /* EmployeeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF125B28618F8F00CF33FB /* EmployeeListVC.swift */; };
+		A4EF125E28618F9F00CF33FB /* PassportListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF125D28618F9F00CF33FB /* PassportListVC.swift */; };
+		A4EF126028618FDB00CF33FB /* EmployeeDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF125F28618FDB00CF33FB /* EmployeeDetailsVC.swift */; };
+		A4EF1263286193A800CF33FB /* EmployeesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF1262286193A800CF33FB /* EmployeesManager.swift */; };
+		A4EF1265286193B500CF33FB /* PassportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF1264286193B500CF33FB /* PassportManager.swift */; };
+		A4EF1267286199EB00CF33FB /* EmployeePassportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF1266286199EB00CF33FB /* EmployeePassportCoordinator.swift */; };
+		A4EF126A2861AF0900CF33FB /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF12692861AF0900CF33FB /* EmployeeCell.swift */; };
+		A4EF126C2861AF1B00CF33FB /* PassportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF126B2861AF1B00CF33FB /* PassportCell.swift */; };
+		A4EF127B2861DA5700CF33FB /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF127A2861DA5700CF33FB /* Projects.swift */; };
+		A4EF127D2861DE9C00CF33FB /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF127C2861DE9C00CF33FB /* ProjectManager.swift */; };
+		A4EF127F2861DED900CF33FB /* ProjectsDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF127E2861DED900CF33FB /* ProjectsDataRepository.swift */; };
+		A4EF12812861E0CE00CF33FB /* CDProjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF12802861E0CD00CF33FB /* CDProjectExtension.swift */; };
+		A4EF12852862DDC200CF33FB /* ProjectDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF12842862DDC200CF33FB /* ProjectDetailsVC.swift */; };
+		A4EF12872862E1E800CF33FB /* ProjectsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF12862862E1E800CF33FB /* ProjectsCell.swift */; };
 		A4FAC5912823B2BF001255E7 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FAC5902823B2BF001255E7 /* Onboarding.storyboard */; };
 		A4FAC5942823C4C9001255E7 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FAC5932823C4C9001255E7 /* OnboardingVC.swift */; };
 		A4FAC5962823CF80001255E7 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FAC5952823CF80001255E7 /* OnboardingCell.swift */; };
@@ -117,6 +140,14 @@
 		A4379CBD285B5E080071A8A7 /* ShowsDataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsDataCoordinator.swift; sourceTree = "<group>"; };
 		A4379CBF285C45F90071A8A7 /* ShowDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsCoordinator.swift; sourceTree = "<group>"; };
 		A4379CC1285C464B0071A8A7 /* UpdateDeleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDeleteVC.swift; sourceTree = "<group>"; };
+		A4379CC5285CA5F70071A8A7 /* Passports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passports.swift; sourceTree = "<group>"; };
+		A4379CCF285CA8130071A8A7 /* Employees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employees.swift; sourceTree = "<group>"; };
+		A4379CD2285CA8D20071A8A7 /* PassportDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportDataRepository.swift; sourceTree = "<group>"; };
+		A4379CD4285CA9BB0071A8A7 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		A4379CD6285CAB270071A8A7 /* EmployeesDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesDataRepository.swift; sourceTree = "<group>"; };
+		A4379CD9285CADED0071A8A7 /* CDEmployeeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDEmployeeExtension.swift; sourceTree = "<group>"; };
+		A4379CDB285CAE850071A8A7 /* CDPassportExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPassportExtension.swift; sourceTree = "<group>"; };
+		A4379CDD285CB4CA0071A8A7 /* EmployeePassport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeePassport.storyboard; sourceTree = "<group>"; };
 		A4387C1D2829097500645004 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		A465BAA72852FF7A003A5EDD /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		A470571A284F5427007A78BD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
@@ -149,6 +180,21 @@
 		A4C7F9E12822912F00779F1B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A4E2D1DA285376760020526B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4E2D1DC28537FA30020526B /* VerooDeliveryApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VerooDeliveryApp.entitlements; sourceTree = "<group>"; };
+		A4EF125928618F7800CF33FB /* CreateEmployeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeVC.swift; sourceTree = "<group>"; };
+		A4EF125B28618F8F00CF33FB /* EmployeeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListVC.swift; sourceTree = "<group>"; };
+		A4EF125D28618F9F00CF33FB /* PassportListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportListVC.swift; sourceTree = "<group>"; };
+		A4EF125F28618FDB00CF33FB /* EmployeeDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsVC.swift; sourceTree = "<group>"; };
+		A4EF1262286193A800CF33FB /* EmployeesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesManager.swift; sourceTree = "<group>"; };
+		A4EF1264286193B500CF33FB /* PassportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportManager.swift; sourceTree = "<group>"; };
+		A4EF1266286199EB00CF33FB /* EmployeePassportCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeePassportCoordinator.swift; sourceTree = "<group>"; };
+		A4EF12692861AF0900CF33FB /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		A4EF126B2861AF1B00CF33FB /* PassportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportCell.swift; sourceTree = "<group>"; };
+		A4EF127A2861DA5700CF33FB /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+		A4EF127C2861DE9C00CF33FB /* ProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
+		A4EF127E2861DED900CF33FB /* ProjectsDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsDataRepository.swift; sourceTree = "<group>"; };
+		A4EF12802861E0CD00CF33FB /* CDProjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDProjectExtension.swift; sourceTree = "<group>"; };
+		A4EF12842862DDC200CF33FB /* ProjectDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsVC.swift; sourceTree = "<group>"; };
+		A4EF12862862E1E800CF33FB /* ProjectsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsCell.swift; sourceTree = "<group>"; };
 		A4FAC5902823B2BF001255E7 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		A4FAC5932823C4C9001255E7 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		A4FAC5952823CF80001255E7 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
@@ -198,6 +244,7 @@
 				A4379CB7285B3F450071A8A7 /* CoreDataCoordinator.swift */,
 				A4379CBD285B5E080071A8A7 /* ShowsDataCoordinator.swift */,
 				A4379CBF285C45F90071A8A7 /* ShowDetailsCoordinator.swift */,
+				A4EF1266286199EB00CF33FB /* EmployeePassportCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -266,6 +313,49 @@
 				A4379CB1285B34D70071A8A7 /* EmployeeManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		A4379CC3285C9FF70071A8A7 /* CoreDataRelationships */ = {
+			isa = PBXGroup;
+			children = (
+				A4EF12612861939700CF33FB /* Managers */,
+				A4EF125828618F6300CF33FB /* Controllers */,
+				A4379CD8285CADCF0071A8A7 /* Extensions */,
+				A4379CD1285CA8BA0071A8A7 /* Repository */,
+				A4379CC4285CA5E20071A8A7 /* Model */,
+				A4379CDD285CB4CA0071A8A7 /* EmployeePassport.storyboard */,
+			);
+			path = CoreDataRelationships;
+			sourceTree = "<group>";
+		};
+		A4379CC4285CA5E20071A8A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4379CC5285CA5F70071A8A7 /* Passports.swift */,
+				A4379CCF285CA8130071A8A7 /* Employees.swift */,
+				A4EF127A2861DA5700CF33FB /* Projects.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4379CD1285CA8BA0071A8A7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A4379CD2285CA8D20071A8A7 /* PassportDataRepository.swift */,
+				A4379CD6285CAB270071A8A7 /* EmployeesDataRepository.swift */,
+				A4EF127E2861DED900CF33FB /* ProjectsDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A4379CD8285CADCF0071A8A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4379CD9285CADED0071A8A7 /* CDEmployeeExtension.swift */,
+				A4379CDB285CAE850071A8A7 /* CDPassportExtension.swift */,
+				A4EF12802861E0CD00CF33FB /* CDProjectExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A4705723284F62C0007A78BD /* Authentications */ = {
@@ -337,6 +427,7 @@
 			children = (
 				A4E2D1DC28537FA30020526B /* VerooDeliveryApp.entitlements */,
 				A4E2D1DA285376760020526B /* GoogleService-Info.plist */,
+				A4379CC3285C9FF70071A8A7 /* CoreDataRelationships */,
 				A40E5F0A285884F10081DE7C /* CoreData */,
 				A4379C9F285B01D90071A8A7 /* CoreDataTwo */,
 				A480B26D2851F60A003CEE92 /* Notification */,
@@ -357,6 +448,7 @@
 				A4AB115D281D04D70005A122 /* Info.plist */,
 				A412388C2824D86100828E5C /* Data.swift */,
 				A41805082850A04A0099FF89 /* DataClass.swift */,
+				A4379CD4285CA9BB0071A8A7 /* BaseRepository.swift */,
 			);
 			path = VerooDeliveryApp;
 			sourceTree = "<group>";
@@ -393,6 +485,39 @@
 				A4FEAD9A282010EA00D17E4A /* Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A4EF125828618F6300CF33FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4EF12682861AEC800CF33FB /* TableViewCell */,
+				A4EF125928618F7800CF33FB /* CreateEmployeeVC.swift */,
+				A4EF125B28618F8F00CF33FB /* EmployeeListVC.swift */,
+				A4EF125D28618F9F00CF33FB /* PassportListVC.swift */,
+				A4EF125F28618FDB00CF33FB /* EmployeeDetailsVC.swift */,
+				A4EF12842862DDC200CF33FB /* ProjectDetailsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A4EF12612861939700CF33FB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A4EF1262286193A800CF33FB /* EmployeesManager.swift */,
+				A4EF1264286193B500CF33FB /* PassportManager.swift */,
+				A4EF127C2861DE9C00CF33FB /* ProjectManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A4EF12682861AEC800CF33FB /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4EF12692861AF0900CF33FB /* EmployeeCell.swift */,
+				A4EF126B2861AF1B00CF33FB /* PassportCell.swift */,
+				A4EF12862862E1E800CF33FB /* ProjectsCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		A4FAC5922823B2F4001255E7 /* OnboardingScreen */ = {
@@ -516,6 +641,7 @@
 				A4FAC5912823B2BF001255E7 /* Onboarding.storyboard in Resources */,
 				A470571F284F544A007A78BD /* ReadexPro-Light.ttf in Resources */,
 				A4379C98285A08E80071A8A7 /* UserTasks.storyboard in Resources */,
+				A4379CDE285CB4CA0071A8A7 /* EmployeePassport.storyboard in Resources */,
 				A480B2712851FCE5003CEE92 /* Notification.storyboard in Resources */,
 				A4AB115C281D04D70005A122 /* LaunchScreen.storyboard in Resources */,
 				A4705722284F5451007A78BD /* ReadexPro-SemiBold.ttf in Resources */,
@@ -599,41 +725,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4379CDA285CADED0071A8A7 /* CDEmployeeExtension.swift in Sources */,
 				A4379CA9285B03B70071A8A7 /* EmployeeDataRepository.swift in Sources */,
+				A4379CD7285CAB270071A8A7 /* EmployeesDataRepository.swift in Sources */,
 				A41238922824ECCE00828E5C /* AppCoordinator.swift in Sources */,
+				A4379CD0285CA8130071A8A7 /* Employees.swift in Sources */,
 				A4FEAD902820002B00D17E4A /* LabelBaseClass.swift in Sources */,
 				A4379CAF285B05B60071A8A7 /* PersistentStorage.swift in Sources */,
+				A4EF127B2861DA5700CF33FB /* Projects.swift in Sources */,
 				A470571C284F543D007A78BD /* R.generated.swift in Sources */,
 				A4FAC5962823CF80001255E7 /* OnboardingCell.swift in Sources */,
 				A412AB822822D21E009348F3 /* ProfileDataClass.swift in Sources */,
 				A4379CC2285C464B0071A8A7 /* UpdateDeleteVC.swift in Sources */,
 				A4BDE0BC285887E600AD20FA /* NoteModel.xcdatamodeld in Sources */,
+				A4EF12812861E0CE00CF33FB /* CDProjectExtension.swift in Sources */,
+				A4EF12872862E1E800CF33FB /* ProjectsCell.swift in Sources */,
 				A4379CBC285B58D10071A8A7 /* ShowDataCell.swift in Sources */,
+				A4EF126A2861AF0900CF33FB /* EmployeeCell.swift in Sources */,
+				A4EF127D2861DE9C00CF33FB /* ProjectManager.swift in Sources */,
 				A4705729284F7906007A78BD /* BaseViewModel.swift in Sources */,
 				A4379C862859D19A0071A8A7 /* NotesCoordinator.swift in Sources */,
 				A4379C9E285A10C80071A8A7 /* UsersTasksCoordinator.swift in Sources */,
+				A4EF127F2861DED900CF33FB /* ProjectsDataRepository.swift in Sources */,
 				A4C347182822A85F005E83DD /* ProfileVC.swift in Sources */,
+				A4EF126028618FDB00CF33FB /* EmployeeDetailsVC.swift in Sources */,
+				A4379CD3285CA8D20071A8A7 /* PassportDataRepository.swift in Sources */,
 				A4387C1E2829097500645004 /* UserDefaults.swift in Sources */,
 				A4FEAD9B282010EA00D17E4A /* Color.swift in Sources */,
+				A4379CDC285CAE850071A8A7 /* CDPassportExtension.swift in Sources */,
 				A4AB116B281D3C8B0005A122 /* CustomView.swift in Sources */,
+				A4EF1263286193A800CF33FB /* EmployeesManager.swift in Sources */,
 				A480B26F2851FCCD003CEE92 /* NotificationVC.swift in Sources */,
 				A41238902824EB9800828E5C /* CoordinatorBoard.swift in Sources */,
 				A4FAC5982823D19D001255E7 /* OnboardingDataClass.swift in Sources */,
 				A47C556928214E47009508BE /* SignInVC.swift in Sources */,
+				A4379CC6285CA5F70071A8A7 /* Passports.swift in Sources */,
 				A4379CBA285B4D680071A8A7 /* ShowDataVC.swift in Sources */,
 				A4379C9C285A0AEB0071A8A7 /* UsersTaskVC.swift in Sources */,
+				A4EF1267286199EB00CF33FB /* EmployeePassportCoordinator.swift in Sources */,
 				A470572B284F7AEA007A78BD /* Dynamics.swift in Sources */,
 				A4FAC5942823C4C9001255E7 /* OnboardingVC.swift in Sources */,
+				A4EF12852862DDC200CF33FB /* ProjectDetailsVC.swift in Sources */,
 				A4379C8228599F2C0071A8A7 /* NotesCell.swift in Sources */,
 				A4705727284F694E007A78BD /* BaseViewController.swift in Sources */,
 				A4BDE0C0285889CC00AD20FA /* NotesVC.swift in Sources */,
 				A480B27328520770003CEE92 /* NotificationCoordinator.swift in Sources */,
 				A4379CAC285B04030071A8A7 /* Employee.swift in Sources */,
 				A41805092850A04A0099FF89 /* DataClass.swift in Sources */,
+				A4EF125E28618F9F00CF33FB /* PassportListVC.swift in Sources */,
 				A4AB1154281D04D50005A122 /* ViewController.swift in Sources */,
 				A4379CB2285B34D70071A8A7 /* EmployeeManager.swift in Sources */,
+				A4379CD5285CA9BB0071A8A7 /* BaseRepository.swift in Sources */,
 				A41238942824F01500828E5C /* ProfileCoordinator.swift in Sources */,
 				A412388D2824D86100828E5C /* Data.swift in Sources */,
+				A4EF125A28618F7800CF33FB /* CreateEmployeeVC.swift in Sources */,
 				A4379CBE285B5E080071A8A7 /* ShowsDataCoordinator.swift in Sources */,
 				A418050C2850D8070099FF89 /* AuthenticationViewModel.swift in Sources */,
 				A4FEAD8E281FF53A00D17E4A /* CustomPasswordTextField.swift in Sources */,
@@ -646,10 +791,13 @@
 				A4FEAD9E2820183B00D17E4A /* CustomButtons.swift in Sources */,
 				A4AB1152281D04D50005A122 /* SceneDelegate.swift in Sources */,
 				A465BAA82852FF7A003A5EDD /* NotificationManager.swift in Sources */,
+				A4EF126C2861AF1B00CF33FB /* PassportCell.swift in Sources */,
 				A4379CB8285B3F450071A8A7 /* CoreDataCoordinator.swift in Sources */,
 				A47C556B28214E7D009508BE /* SignUpVC.swift in Sources */,
 				A4379CA2285B02120071A8A7 /* CDEmployee.xcdatamodeld in Sources */,
+				A4EF125C28618F8F00CF33FB /* EmployeeListVC.swift in Sources */,
 				A4379CB6285B3CC70071A8A7 /* CoreDataVC.swift in Sources */,
+				A4EF1265286193B500CF33FB /* PassportManager.swift in Sources */,
 				A4379CC0285C45F90071A8A7 /* ShowDetailsCoordinator.swift in Sources */,
 				A4C7F9DA282258B900779F1B /* Extensions.swift in Sources */,
 			);

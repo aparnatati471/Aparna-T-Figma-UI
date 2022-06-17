@@ -2,10 +2,22 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:VerooDeliveryApp/CDEmployee+CoreDataClass.swift">
+      location = "group:CDEmployee+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:VerooDeliveryApp/CDEmployee+CoreDataProperties.swift">
+      location = "group:CDEmployee+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:CDProject+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:CDProject+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VerooDeliveryApp/CDPassport+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VerooDeliveryApp/CDPassport+CoreDataProperties.swift">
    </FileRef>
    <FileRef
       location = "group:VerooDeliveryApp/CoreData/Relationships/User+CoreDataClass.swift">

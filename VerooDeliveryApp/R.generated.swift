@@ -125,10 +125,12 @@ struct R: Rswift.Validatable {
   #endif
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 8 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 9 storyboards.
   struct storyboard {
     /// Storyboard `CoreData`.
     static let coreData = _R.storyboard.coreData()
+    /// Storyboard `EmployeePassport`.
+    static let employeePassport = _R.storyboard.employeePassport()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
@@ -148,6 +150,13 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "CoreData", bundle: ...)`
     static func coreData(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.coreData)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "EmployeePassport", bundle: ...)`
+    static func employeePassport(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.employeePassport)
     }
     #endif
 
@@ -743,23 +752,29 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 4 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 7 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `ProfileCell`.
     static let profileCell: Rswift.ReuseIdentifier<ProfileCell> = Rswift.ReuseIdentifier(identifier: "ProfileCell")
+    /// Reuse identifier `empCell`.
+    static let empCell: Rswift.ReuseIdentifier<EmployeeCell> = Rswift.ReuseIdentifier(identifier: "empCell")
     /// Reuse identifier `employeeCell`.
     static let employeeCell: Rswift.ReuseIdentifier<ShowDataCell> = Rswift.ReuseIdentifier(identifier: "employeeCell")
     /// Reuse identifier `notesCell`.
     static let notesCell: Rswift.ReuseIdentifier<NotesCell> = Rswift.ReuseIdentifier(identifier: "notesCell")
     /// Reuse identifier `onboardingCell`.
     static let onboardingCell: Rswift.ReuseIdentifier<OnboardingCell> = Rswift.ReuseIdentifier(identifier: "onboardingCell")
+    /// Reuse identifier `passportCell`.
+    static let passportCell: Rswift.ReuseIdentifier<PassportCell> = Rswift.ReuseIdentifier(identifier: "passportCell")
+    /// Reuse identifier `projectCell`.
+    static let projectCell: Rswift.ReuseIdentifier<ProjectsCell> = Rswift.ReuseIdentifier(identifier: "projectCell")
 
     fileprivate init() {}
   }
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 41 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 43 localization keys.
     struct localizable {
       /// Value: A holiday classic, our Peppermint Mocha infuses hand-pulled espresso with rich chocolate sauce, sweet peppermint, topped with a cloud of whipped cream.
       static let subtitleOne = Rswift.StringResource(key: "SubtitleOne", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
@@ -825,6 +840,8 @@ struct R: Rswift.Validatable {
       static let onboard = Rswift.StringResource(key: "Onboard", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Our Masala Chai latte is Peets take on a traditional Indian cup. Our own blend of teas and spices, lightly sweetened, with steamed milk.
       static let subtitleTwo = Rswift.StringResource(key: "SubtitleTwo", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Passport List
+      static let passportTitle = Rswift.StringResource(key: "passportTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Payment Methods
       static let payment = Rswift.StringResource(key: "Payment", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Peppermint Mocha
@@ -833,6 +850,8 @@ struct R: Rswift.Validatable {
       static let orders = Rswift.StringResource(key: "Orders", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: ProfileScreen
       static let profile = Rswift.StringResource(key: "Profile", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Projects List
+      static let projectTitle = Rswift.StringResource(key: "projectTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Save
       static let editButtonTitle = Rswift.StringResource(key: "editButtonTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Sign In
@@ -1260,6 +1279,19 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("SubtitleTwo", bundle: bundle, comment: "")
       }
 
+      /// Value: Passport List
+      static func passportTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("passportTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "passportTitle"
+        }
+
+        return NSLocalizedString("passportTitle", bundle: bundle, comment: "")
+      }
+
       /// Value: Payment Methods
       static func payment(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
@@ -1310,6 +1342,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("Profile", bundle: bundle, comment: "")
+      }
+
+      /// Value: Projects List
+      static func projectTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("projectTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "projectTitle"
+        }
+
+        return NSLocalizedString("projectTitle", bundle: bundle, comment: "")
       }
 
       /// Value: Save
@@ -1410,6 +1455,9 @@ struct _R: Rswift.Validatable {
       try coreData.validate()
       #endif
       #if os(iOS) || os(tvOS)
+      try employeePassport.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try launchScreen.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -1462,6 +1510,60 @@ struct _R: Rswift.Validatable {
         if _R.storyboard.coreData().coreDataVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'coreDataVC' could not be loaded from storyboard 'CoreData' as 'CoreDataVC'.") }
         if _R.storyboard.coreData().showDataVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'showDataVC' could not be loaded from storyboard 'CoreData' as 'ShowDataVC'.") }
         if _R.storyboard.coreData().updateDeleteVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'updateDeleteVC' could not be loaded from storyboard 'CoreData' as 'UpdateDeleteVC'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct employeePassport: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = UIKit.UITabBarController
+
+      let bundle = R.hostingBundle
+      let createEmployeeVC = StoryboardViewControllerResource<CreateEmployeeVC>(identifier: "CreateEmployeeVC")
+      let employeeDetailsVC = StoryboardViewControllerResource<EmployeeDetailsVC>(identifier: "EmployeeDetailsVC")
+      let employeeListVC = StoryboardViewControllerResource<EmployeeListVC>(identifier: "EmployeeListVC")
+      let name = "EmployeePassport"
+      let passportListVC = StoryboardViewControllerResource<PassportListVC>(identifier: "PassportListVC")
+      let projectDetailsVC = StoryboardViewControllerResource<ProjectDetailsVC>(identifier: "ProjectDetailsVC")
+
+      func createEmployeeVC(_: Void = ()) -> CreateEmployeeVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: createEmployeeVC)
+      }
+
+      func employeeDetailsVC(_: Void = ()) -> EmployeeDetailsVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: employeeDetailsVC)
+      }
+
+      func employeeListVC(_: Void = ()) -> EmployeeListVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: employeeListVC)
+      }
+
+      func passportListVC(_: Void = ()) -> PassportListVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: passportListVC)
+      }
+
+      func projectDetailsVC(_: Void = ()) -> ProjectDetailsVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: projectDetailsVC)
+      }
+
+      static func validate() throws {
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "doc.fill") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'doc.fill' is used in storyboard 'EmployeePassport', but couldn't be loaded.") } }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "person.fill") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'person.fill' is used in storyboard 'EmployeePassport', but couldn't be loaded.") } }
+        if UIKit.UIImage(named: "profileImage", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'profileImage' is used in storyboard 'EmployeePassport', but couldn't be loaded.") }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "square.and.arrow.up.fill") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'square.and.arrow.up.fill' is used in storyboard 'EmployeePassport', but couldn't be loaded.") } }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "square.and.pencil") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'square.and.pencil' is used in storyboard 'EmployeePassport', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "MainViewBackgroundColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'MainViewBackgroundColor' is used in storyboard 'EmployeePassport', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "Red", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Red' is used in storyboard 'EmployeePassport', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "TextFieldBackgroundColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'TextFieldBackgroundColor' is used in storyboard 'EmployeePassport', but couldn't be loaded.") }
+        }
+        if _R.storyboard.employeePassport().createEmployeeVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'createEmployeeVC' could not be loaded from storyboard 'EmployeePassport' as 'CreateEmployeeVC'.") }
+        if _R.storyboard.employeePassport().employeeDetailsVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'employeeDetailsVC' could not be loaded from storyboard 'EmployeePassport' as 'EmployeeDetailsVC'.") }
+        if _R.storyboard.employeePassport().employeeListVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'employeeListVC' could not be loaded from storyboard 'EmployeePassport' as 'EmployeeListVC'.") }
+        if _R.storyboard.employeePassport().passportListVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'passportListVC' could not be loaded from storyboard 'EmployeePassport' as 'PassportListVC'.") }
+        if _R.storyboard.employeePassport().projectDetailsVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'projectDetailsVC' could not be loaded from storyboard 'EmployeePassport' as 'ProjectDetailsVC'.") }
       }
 
       fileprivate init() {}

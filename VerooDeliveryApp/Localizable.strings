@@ -57,6 +57,7 @@
 "updateAlertFailMsg"    = "Error in updating employee!!";
 "deleteAlertFailMsg"    = "Error in deleting employee!!";
 "done"                  = "Done";
-
+"passportTitle"         = "Passport List";
+"projectTitle"          = "Projects List";
 
 
